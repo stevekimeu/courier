@@ -33,6 +33,10 @@
 	overflow: hidden;
 	background-color:#6495ED;
 	width:100%;
+	padding-left: 5%;
+	padding-bottom:0.5%;
+	padding-top:0.5%;
+	min-height:auto;
 }
 .navlayer4{
 	overflow: hidden;
@@ -88,6 +92,10 @@
   padding: 10px 12px;
   text-decoration: none;
   font-size: 15px;
+  border-radius: 5px;
+  margin-left: 2%;
+  background-color: rgb(65, 65, 247);
+ 
 }
 .navlayer5 a {
   float: left;
@@ -121,8 +129,11 @@
   color: white;
 }
 .navlayer3 a:hover {
-  background-color: #ddd;
-  color: black;
+  
+  color: white;
+  box-shadow: 1px 5px rgb(65, 65, 247);
+  background-color:rgb(65, 65, 247); 
+  font-size: 15px;
 }
 .fa-envelope{ 
 	color: white;

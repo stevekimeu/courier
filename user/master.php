@@ -16,7 +16,7 @@ if($sql->num_rows > 0){
 <head>
 <title>Livestock Markets</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="http://localhost/mulling_logo.jpg" type="image/icon type">
+<link rel="icon" href="http://localhost/courier/images/log.png" type="image/icon type">
 <link href = "../css/central.css" type = "text/css" rel = "stylesheet" />
 <link href = "../css/topcss.css" type = "text/css" rel = "stylesheet" />
 <script src="https://kit.fontawesome.com/4cb2645454.js" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@ if($sql->num_rows > 0){
 	<form name = "search" action = "search.php" method = "POST">
 		<table width = "100%">
 		<td>
-			<a href = "Home.php"> <img src="../images/mulling_logo1.png" height="60" width="550"></a> 
+			<a href = "Home.php"> <img src="../images/logos.png" height="60" width="400"></a> 
 		</td>
 		<td align "right" >  Quick Search Bar &nbsp; <input type="text" name = "search" placeholder="Search Animal(s)"  >&nbsp;<input name = "submit" type="submit" Value="Search" >
 		</td>
@@ -39,7 +39,7 @@ if($sql->num_rows > 0){
 	</div>
 	<div class="navlayer4">
 	<div class = "left">
-	<a href = "#">You are logged in as:&nbsp;<i><?php echo $loggedin;} }?></i></a>
+	<a href = "#">logged in as:&nbsp;<i><?php echo $loggedin;} }?></i></a>
 	
 	</div>
 	<div class="right">		
@@ -52,17 +52,13 @@ if($sql->num_rows > 0){
 <table width = "100%">
 	<tr>
 		<td width ="100%" align = "center">	
-		  <a href="shop_animals.php">Shop for Animal(s)</a>
-		  <a href="sell_livestock.php">Sell your Animal(s)</a>		  
-		  <a href="auctionresults.php">Auction Results</a>		  
-		<div class="dropdown">
-			<button class="dropbtn">My Markets </button>
-			<div class="dropdown-content">
-				<a href="myposting.php">My Livestock On Sale</a>
-				  <a href="bids.php">My Livestock Buyers</a>
-				  <a href="mybids.php">My Bids</a>				  
-			</div>
-		</div>	  
+		  <a href="shop_animals.php">Bid Animals</a>
+		  <a href="sell_livestock.php">Auction Animal</a>		  
+		  <a href="myposting.php">On Sale</a>
+		  <a href="bids.php">Bidders</a>
+		  <a href="mybids.php">Bids</a>			  
+		  <a href="auctionresults.php">Results</a>			  
+				  
 		</td>
 	</tr>
 </table>

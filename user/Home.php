@@ -7,7 +7,7 @@ require_once('../admin/library.php');
 <head>
 <title>Livestock Markets</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="http://localhost/mulling_logo.jpg" type="image/icon type">
+<link rel="icon" href="http://localhost/courier/images/log.png" type="image/icon type">
 
 <link href = "../css/central.css" type = "text/css" rel = "stylesheet" /> 
 <link href = "../css/admin.css" type = "text/css" rel = "stylesheet" /> 
@@ -20,7 +20,7 @@ require_once('../admin/library.php');
 	<form name = "search" action = "search.php" method = "POST">
 		<table width = "100%">
 		<td>
-			<a href = "Home.php"> <img src="../images/mulling_logo1.png" height="70" width="700"></a> 
+			<a href = "Home.php"> <img src="../images/logos.png" height="70" width="450"></a> 
 		</td>
 		<td align "right" >  Quick Search Bar &nbsp; <input type="text" name = "search" placeholder="Search" >&nbsp;<input name = "submit" type="submit" Value="Search" >
 		</td>
@@ -30,11 +30,11 @@ require_once('../admin/library.php');
 	
 	<div class="topnav">
 		<div class="left">
-	  <a href="sell_livestock.php">Sell an Animal</a>
-	  <a href="shop_animals.php">Buy an Animal</a>
+	  <a href="sell_livestock.php">Auction Animal</a>
+	  <a href="shop_animals.php">Bid an Animal</a>
 		<a href="#breeding">Breeding Systems</a>
-	   <a href="#news">Weekly Market Updates</a>
-	   <a href="auctionresults.php">Auction Results</a>
+	   <a href="#news">Weekly Updates</a>
+	   <a href="auctionresults.php">Results</a>
 	  </div>
 	
 	<div class="right">	
