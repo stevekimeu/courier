@@ -19,7 +19,8 @@ if($sql->num_rows > 0){
 <link rel="icon" href="http://localhost/mulling_logo.jpg" type="image/icon type">
 <link href = "../css/central.css" type = "text/css" rel = "stylesheet" />
 <link href = "../css/topcss.css" type = "text/css" rel = "stylesheet" />
-<script src="https://kit.fontawesome.com/4cb2645454.js" crossorigin="anonymous"></script>	
+<script src="https://kit.fontawesome.com/4cb2645454.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="config.js"></script>  	
 <link href = "../css/admin.css" type = "text/css" rel = "stylesheet" />  
 </head>
 <body>

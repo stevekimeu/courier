@@ -222,7 +222,7 @@
 			</td><td>
 			<div class="form-group">
 				<label>Farmer Quoted Price in Kshs.:</label>							 
-				<input name="Price" id="Price" type="TEXT" class = "form-control1">
+				<input type="text" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1,000,000.00" class = "form-control1">
 			</div>
 			</tr></td>
 			<tr><td>
