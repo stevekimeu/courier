@@ -3,15 +3,19 @@
 
 	?>
 	
-<div class = "childpane">
-  <div class = "wrapper1">
-				<p>ANIMAL INFORMATION CAPTURE FORM</p>    
+
+  <div class = "wrapper1">	
+  		  
 <form action="sell_animal.php" method="post" enctype="multipart/form-data">
+ 
+<fieldset>
+		<legend>Livestock Information Capture Form</legend> 
 	<table width = "100%">
+		
 		<tr>
 			<td>
 			<div class="form-group">
-						<label>Specify Animal Type:</label>
+						<label>Type of Animal:</label> <br>
 							<select id="Category" name="Category" maxlength="100" class = "form-control1" >
 								<option value="Dairy Cattle" >Dairy Cattle</option>
 								<option value="Beef Cattle">Beef Cattle</option>
@@ -25,7 +29,7 @@
 			</div>
 			</td><td>
 			<div class="form-group">				
-				<label>Crossbred/Purebred:</label> 
+				<label>Crossbred/Purebred:</label> <br>
 				<select id="Purebred" name="Purebred" class = "form-control1">
 				<option value="Crossbred" selected="selected">Crossbred</option>
 				<option value="Purebred">Purebred</option>
@@ -34,18 +38,18 @@
 			</td></tr>
 			<tr><td>
 			<div class="form-group">
-				 <label>Age of the Animal :</label>
+				 <label>Age of the Animal :</label><br>
 				<input name="Age" id="Age"type="TEXT" class = "form-control1">&nbsp;Months
 			</div>	
 			</td><td>
 			<div class="form-group">
-				<label>Animal Approx Weight:</label> 						 
+				<label>Animal Approx Weight:</label><br> 						 
 				 <input name="Weight" id="Weight"  type="TEXT" class = "form-control1">&nbsp;Kgs
 			</div>
 			</td></tr>
 			<tr><td>
 			<div class="form-group">				
-				<label>Animal Breed:</label>        
+				<label>Animal Breed:</label> <br>  
 							<input list="Breed" name="Breed" class = "form-control1">
 							  <datalist id="Breed">
 									<option value = "Sheep">
@@ -161,7 +165,7 @@
 			</div>
 			</td><td>
 			<div class="form-group">
-				<label>Animal Location</label>       
+				<label>Animal Location</label> <br>    
 							<input list="Location" name="Location" class = "form-control1">
 							  <datalist id="Location">
 									  <option value="Mombasa County, Kenya">
@@ -216,18 +220,18 @@
 			</td></tr>
 			<tr><td>
 			<div class="form-group">
-				<label>Date of Auction :</label>			
+				<label>Date of Auction :</label><br>		
 				<input name="AuctionDate" id="AuctionDate"  type="date" class = "form-control1">
 			</div>
 			</td><td>
 			<div class="form-group">
-				<label>Farmer Quoted Price in Kshs.:</label>							 
+				<label>Farmer Quoted Price in Kshs.:</label><br>							 
 				<input type="text" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1,000,000.00" class = "form-control1">
 			</div>
 			</tr></td>
 			<tr><td>
 			<div class="form-group">
-			 <label>Specify Method of Payment:</label>						 
+			 <label>Specify Method of Payment:</label>	<br>					 
 			 <select name="PaymentMethod" id="PaymentMethod" class = "form-control1">
 					<option selected="selected" value="Cash">Cash</option>
 					<option value="Bank">Bank</option>
@@ -240,9 +244,13 @@
     <input type="file" name="file">
 	</div>
 	</td></tr>
-	<tr width = "100%"><td>
+
+	<tr width = "100%"><td colspan = "2">
+	<div class="form-group">
     <input type="submit" name="submit" value="Sell Livestock">
+	</div
 	</td></tr>
+	</fieldset>
+</table>
 </form>
-</div>
 </div>

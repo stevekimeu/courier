@@ -32,20 +32,20 @@ if($sql->num_rows > 0){
 		<td>
 			<a href = "Home.php"> <img src="../images/logos.png" height="60" width="400"></a> 
 		</td>
-		<td align "right" >  Quick Search Bar &nbsp; <input type="text" name = "search" placeholder="Search Animal(s)"  >&nbsp;<input name = "submit" type="submit" Value="Search" >
+		<td align "right" >  Quick Search Bar &nbsp; <input type="text" name = "search" placeholder="Search for Livestock"  >&nbsp;<input name = "submit" type="submit" Value="Search" >
 		</td>
 		</table>
 	</form>
 	</div>
 	<div class="navlayer4">
 	<div class = "left">
-	<a href = "#">logged in as:&nbsp;<i><?php echo $loggedin;} }?></i></a>
+	<i>logged in as:&nbsp;<?php echo $loggedin;} }?></i>
 	
 	</div>
 	<div class="right">		
 		<a href="user_message.php">Inbox</a>
 		<a href="contact_form.php">Contact Us</a>
-		<a href="logout.php">Logout</a>
+		<a href="logout.php">Sign Out</a>
 	  </div>
 	</div>
 	<div class="navlayer3">
@@ -55,8 +55,8 @@ if($sql->num_rows > 0){
 		  <a href="shop_animals.php">Bid Animals</a>
 		  <a href="sell_livestock.php">Auction Animal</a>		  
 		  <a href="myposting.php">On Sale</a>
-		  <a href="bids.php">Bidders</a>
-		  <a href="mybids.php">Bids</a>			  
+		  <a href="bids.php">My Livestock Bidders</a>
+		  <a href="mybids.php">Bids on Livestock</a>			  
 		  <a href="auctionresults.php">Results</a>			  
 				  
 		</td>
