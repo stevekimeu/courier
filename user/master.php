@@ -39,13 +39,13 @@ if($sql->num_rows > 0){
 	</div>
 	<div class="navlayer4">
 	<div class = "left">
-	<i>logged in as:&nbsp;<?php echo $loggedin;} }?></i>
+	<i>Logged in as:&nbsp;<?php echo $loggedin;} }?></i>
 	
 	</div>
 	<div class="right">		
 		<a href="user_message.php">Inbox</a>
 		<a href="contact_form.php">Contact Us</a>
-		<a href="logout.php">Sign Out</a>
+		<a href="logout.php">Logout</a>
 	  </div>
 	</div>
 	<div class="navlayer3">

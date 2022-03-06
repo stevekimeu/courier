@@ -50,7 +50,7 @@
 			<tr><td>
 			<div class="form-group">				
 				<label>Animal Breed:</label> <br>  
-							<input list="Breed" name="Breed" class = "form-control1">
+							<input list="Breed" name="Breed" class = "form-control1" required> 
 							  <datalist id="Breed">
 									<option value = "Sheep">
 									<option value = "Swine">
@@ -248,9 +248,12 @@
 	<tr width = "100%"><td colspan = "2">
 	<div class="form-group">
     <input type="submit" name="submit" value="Sell Livestock">
-	</div
+</div>
 	</td></tr>
 	</fieldset>
 </table>
 </form>
+<div class = "footer">
+	Livestock@2022
+</div>
 </div>
