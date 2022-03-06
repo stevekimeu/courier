@@ -18,12 +18,11 @@ if($query->num_rows > 0){
 		$posted = $row["Created_On"];
 		$cid = $row["cid"];
 ?>
-<div class = "childpane">
 <div class = "displayanimal">		
 	<table width = "100%">
 		<tr>
 			<td align = "center" color = "green">
-					<img src="<?php echo $imageURL; ?>" width ="50%" height = "120" alt = "No Picture"/>
+					<img src="<?php echo $imageURL; ?>" width ="80%" height = "192" alt = "No Picture"/>
 					<h1>Opening Bid: &nbspKsh.&nbsp;<?php echo $price; ?></h1>			
 					<h3>&nbsp;<?php echo $category; ?></h3>						
 					<h3>&nbsp;<?php echo $location; ?></h3>					
@@ -42,5 +41,5 @@ if($query->num_rows > 0){
     <p>Livestock of such Category not found...</p>
 <?php }
 // Display status message
-
 ?>
+</div>

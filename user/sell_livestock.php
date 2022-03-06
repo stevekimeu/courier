@@ -3,7 +3,7 @@
 
 	?>
 	
-
+	<div class = "innercontainer">
   <div class = "wrapper1">			  
 <form action="sell_animal.php" method="post" enctype="multipart/form-data">
  
@@ -253,5 +253,6 @@
 </form>
 <div class = "footer">
 	Livestock@2022
+</div>
 </div>
 </div>

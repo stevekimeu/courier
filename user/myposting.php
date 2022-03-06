@@ -27,18 +27,18 @@ if($query->num_rows > 0){
 		
 ?>
 <div class = "childpane">
-<div class = "displayanimal1">		
+<div class = "displayanimal">		
 	<table width = "100%">
 		<tr>
 			<td align = "center" color = "green">
-					<img src="<?php echo $imageURL; ?>" width ="100%" height = "240" alt = "No Picture"/>
+					<img src="<?php echo $imageURL; ?>" width ="80%" height = "192" alt = "No Picture"/>
 					<h1>Kshs.&nbsp;<?php echo $price; ?></h1>					
 					<h2>&nbsp;<?php echo $location; ?></h2>	
 					<p>Posted On:&nbsp;<?php echo $posted; ?></p>
 					<p>Date of Auction:&nbsp;<?php echo $auction; ?></p>
 					<h3><?php echo $diff->format("%R%a days");?> Remaining</h3>	
 					<a href = "delete_post.php?cid=<?php echo $cid; ?>"><h3>Delete Post</h3></a>
-	<div class = "displayanimal1_tab">
+	<div class = "displayanimal_tab">
 			<a href = "edit.php?cid=<?php echo $cid; ?>">Edit your Post</a>
 		</div>
 	
