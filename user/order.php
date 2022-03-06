@@ -26,8 +26,7 @@ extract($data);**/
 		<link rel="icon" href="http://localhost/mulling_logo.jpg" type="image/icon type">
 	</head>
 <body>
-<?php include("master.php"); ?>				
-	<div class = "childpane">
+<?php include("master.php"); ?>	
 		<div class = "wrapper1">
 			<?php
 				if(isset($_POST['submit']))
@@ -56,48 +55,51 @@ extract($data);**/
 					}
 				}
 		?>
-		 <form name="form" method="POST" action="">			
-						<p>Tender your Bid</p>
-		<table>
+		 <form name="form" method="POST" action="">	
+		 <fieldset>
+		<legend>Tender your Bid</legend> 
+		<table  width = "100%">
 			<tr>
-				<td width = "100%">
+				<td>
 		<div class="form-group">	
-			<label>Animal Category :</label>
+			<label>Animal Category :</label><br>
 		<input name="Category" id="Category" class = "form-control1" type="TEXT"  readonly value = "<?php echo $data['category'];?>" />				
 		</div>	
-		</td><td width = "100%">
+		</td><td >
 			<div class="form-group">			
-					<label>Animal Number: </label>            
+					<label>Animal Number: </label> <br>           
 						<input name="Number" id="Number" class = "form-control1" type="TEXT" readonly value="<?php echo $data['cid'];?>" />			
 			</div>
 		</td></tr>
-		<tr><td width = "100%">
+		<tr><td>
 		  <div class="form-group">
-					<label>Farmer Quoted Price: </label>	
+					<label>Farmer Quoted Price: </label><br><br>	
 					<input name="Price" id="Price" class = "form-control1" type="TEXT"  readonly value="<?php echo $data['price'];?>" />
 		</div>
-		</td><td width = "100%">
+		</td><td>
 		<div class="form-group">
-					<label>Date of Auction: </label>			
+					<label>Date of Auction: </label><br><br>			
 					<input name="Date" id="Date" class = "form-control1" type="date" readonly value="<?php echo $data['auction_date'];?>" />
 		</div>		
 		</td></tr>
-		<tr><td width = "100%">		
+		<tr><td>		
 			<div class="form-group">
-					<label>Quote your Price</label>
+					<label>Quote your Price</label><br><br>
 					<input type="TEXT" class = "form-control1" name="bid" required>
 			</div>
-				</td><td width = "100%">
+				</td><td>
 			<div class="form-group">
-					<label>Please give more specifications</label>			
+					<label>Please give more specifications</label><br><br>		
 					<textarea  name="comments" id="comments" cols = "50" rows= "3" required>	</textarea>
 			</div>
 			</td></tr>
-			<tr><td width = "100%">
+			<tr><td colspan = "2">
+			<div class="form-group">
 				  <input name="submit" type="submit" value="Submit your  Bid" />
+			</div>
 			</td></tr>
 		</table>
-				  
+			</fieldset>		  
 	 </form>   
  
 

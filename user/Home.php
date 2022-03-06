@@ -22,7 +22,7 @@ require_once('../admin/library.php');
 		<td>
 			<a href = "Home.php"> <img src="../images/logos.png" height="70" width="450"></a> 
 		</td>
-		<td align "right" >  Quick Search Bar &nbsp; <input type="text" name = "search" placeholder="Search" >&nbsp;<input name = "submit" type="submit" Value="Search" >
+		<td align "right" >  Quick Search Bar &nbsp; <input type="text" name = "search" placeholder="Search for Livestock" >&nbsp;<input name = "submit" type="submit" Value="Search" >
 		</td>
 		</table>
 	</form>
@@ -30,11 +30,11 @@ require_once('../admin/library.php');
 	
 	<div class="topnav">
 		<div class="left">
-	  <a href="sell_livestock.php">Auction Animal</a>
-	  <a href="shop_animals.php">Bid an Animal</a>
+		<a href="shop_animals.php">Bid an Animal</a>
+	  	<a href="sell_livestock.php">Auction Animal</a>
 		<a href="#breeding">Breeding Systems</a>
-	   <a href="#news">Weekly Updates</a>
-	   <a href="auctionresults.php">Results</a>
+	  	<a href="#news">Weekly Updates</a>
+	   	<a href="auctionresults.php">Results</a>
 	  </div>
 	
 	<div class="right">	
@@ -107,8 +107,7 @@ require_once('../admin/library.php');
 				}
 				// Get the element with id="defaultOpen" and click on it
 				document.getElementById("defaultOpen").click();
-				</script>
-				
+				</script>			
 				
 			</div>
 		</div>

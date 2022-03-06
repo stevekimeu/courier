@@ -23,12 +23,11 @@ if($query->num_rows > 0){
 	<table width = "100%">
 		<tr>
 			<td align = "center" color = "green">
-					<img src="<?php echo $imageURL; ?>" width ="100%" height = "240" alt = "No Picture"/>
+					<img src="<?php echo $imageURL; ?>" width ="50%" height = "120" alt = "No Picture"/>
 					<h1>Opening Bid: &nbspKsh.&nbsp;<?php echo $price; ?></h1>			
 					<h3>&nbsp;<?php echo $category; ?></h3>						
-					<h3>&nbsp;<?php echo $location; ?></h3>
-					<p>Posted On:&nbsp;<?php echo $posted; ?></p>					
-					<p>Date of Auction:&nbsp;<?php echo $auction; ?></p>		
+					<h3>&nbsp;<?php echo $location; ?></h3>					
+					<p>Bid CLoses On:&nbsp;<?php echo $auction; ?></p>		
 			<div class = "displayanimal_tab">
 					<a href = "moredetails.php?cid=<?php echo $cid; ?>">More Details</a> 
 			</div>					

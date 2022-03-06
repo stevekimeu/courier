@@ -4,8 +4,7 @@
 	?>
 	
 
-  <div class = "wrapper1">	
-  		  
+  <div class = "wrapper1">			  
 <form action="sell_animal.php" method="post" enctype="multipart/form-data">
  
 <fieldset>
@@ -241,12 +240,11 @@
 			</div>
 			</td><td>
 	<div class="form-group">
-    <input type="file" name="file">
+    	<input type="file" name="file">
 	</div>
 	</td></tr>
-
 	<tr width = "100%"><td colspan = "2">
-	<div class="form-group">
+<div class="form-group">
     <input type="submit" name="submit" value="Sell Livestock">
 </div>
 	</td></tr>
