@@ -552,7 +552,10 @@ text-align:center;
 
 .innercontainer{
 		width:100%;
-		background-image: url('../images/steve.jpg');
+		background-image: url('../images/use7.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
 		min-height:100%;
 		overflow:auto;
 	}
