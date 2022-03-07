@@ -552,8 +552,8 @@ text-align:center;
 
 .innercontainer{
 		width:100%;
-		background-color:black;
-		height:100%;
+		background-image: url('../images/steve.jpg');
+		min-height:100%;
 		overflow:auto;
 	}
 .windowpane{

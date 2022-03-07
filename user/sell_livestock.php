@@ -230,7 +230,7 @@
 			</tr></td>
 			<tr><td>
 			<div class="form-group">
-			 <label>Specify Method of Payment:</label>	<br>					 
+			 <label>Specify Method of Payment:</label><br>					 
 			 <select name="PaymentMethod" id="PaymentMethod" class = "form-control1">
 					<option selected="selected" value="Cash">Cash</option>
 					<option value="Bank">Bank</option>

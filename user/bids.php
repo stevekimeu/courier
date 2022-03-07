@@ -8,7 +8,7 @@ $sql = "SELECT category, price, bid, username, id, comments, order_date FROM tbl
 $result = dbQuery($sql);	
 
 ?>
-
+<div class = "innercontainer">
 <div class = "displayanimalpane">	
    <p>My Livestock Bidders</p>  
   <table cellpadding="10" cellspacing="2" width = "100%" >

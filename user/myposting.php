@@ -6,7 +6,9 @@
 require_once('../admin/database.php');
 require_once('../admin/library.php');
 $cid = '';
-$query = $dbConn->query("SELECT * FROM tbl_courier WHERE postedby = '$username' ORDER BY category ASC");
+$query = $dbConn->query("SELECT * FROM tbl_courier WHERE postedby = '$username' ORDER BY category ASC");?>
+<div class = "innercontainer">
+<?php
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
         $imageURL = 'uploads/'.$row["picture"];

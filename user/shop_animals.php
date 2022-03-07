@@ -5,7 +5,9 @@
 require_once('../admin/database.php');
 require_once('../admin/library.php');
 $cid = '';
-$query = $dbConn->query("SELECT * FROM tbl_courier ORDER BY category ASC");
+$query = $dbConn->query("SELECT * FROM tbl_courier ORDER BY category ASC"); ?>
+<div class = "innercontainer">
+<?php
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
         $imageURL = 'uploads/'.$row["picture"];
@@ -18,6 +20,7 @@ if($query->num_rows > 0){
 		$posted = $row["Created_On"];
 		$cid = $row["cid"];
 ?>
+<div class = "childpane">
 <div class = "displayanimal">		
 	<table width = "100%">
 		<tr>
@@ -41,5 +44,5 @@ if($query->num_rows > 0){
     <p>Livestock of such Category not found...</p>
 <?php }
 // Display status message
+
 ?>
-</div>
