@@ -61,7 +61,7 @@ td {
 					<img src="<?php echo $imageURL; ?>" width ="auto" height = "225" alt = "No Picture"/>
 					<h2>&nbsp;<?php echo $data['category']; ?></h2>					
 			</td><td>
-					<h4 style = "color:brown;">Opening Bid in Kshs.&nbsp;<?php echo $data['price']; ?></h3>					
+					<h4 style = "color:brown;">Opening Bid: Kshs.&nbsp;<?php echo $data['price']; ?></h3>					
 					<h4>Location:&nbsp;<?php echo $data['location']; ?></h4>	
 					
 					<p>Age:&nbsp;<?php echo $data['age']; ?>&nbsp;Months</p>
@@ -69,9 +69,9 @@ td {
 					<p>Posted On:&nbsp;<?php echo $data['Created_On']; ?></p>
 					<p>Bidding Closes:&nbsp;<?php echo $auction; ?></p>					
 					<h5 style = "color:red;">Bidding to close in &nbsp;<?php echo $diff->format("%R%a days");?> </h5>
-				</td><td>
+				</td><td><br><br><br><br><br><br>
 				<div class = "displayanimal2_tab">
-					<a href = "dealer.php?cid=<?php echo $cid; ?>">For more information Contact Dealer</a> 
+					<a href = "dealer.php?cid=<?php echo $cid; ?>">Contact Dealer For more information </a> 
 				</div><br><br><br>
 				<div class = "displayanimal2_tab">
 							<a href = "order.php?cid=<?php echo $cid; ?>">Click here to bid now</a> 

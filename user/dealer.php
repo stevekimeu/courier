@@ -29,7 +29,7 @@ table {
   width: 100% ;
 }
 td {
-  width: 50% ; 
+  width: 33.33% ; 
   padding-left:0%;
   padding-bottom:0%;
 }
@@ -37,8 +37,7 @@ td {
 	</head>
 	<body>
 
-	<?php include("master.php"); ?>
-			
+	<?php include("master.php"); ?>			
 <div class = "innercontainer">
 <div class = "wrapper1">	
 			<table  width = "100%">
@@ -50,8 +49,9 @@ td {
 					<h2>Name of Dealer:&nbsp;<?php echo $data['fullname'];?></h2>										
 					<h3>Region:&nbsp;<?php echo $data['region'];?></h3>
 					<h4>Phone Number: &nbsp;+254<?php echo $data['phonenumber'];?></h4>					
-					<p>E-mail address:&nbsp;<?php echo $data['email'];?></p>	
-			
+					<p>E-mail address:&nbsp;<?php echo $data['email'];?></p>
+	
+</td><td align = "left">
 			<div class = "displayanimal2_tab">
 					<a href = "order.php?cid=<?php echo $cid; ?>">Click here to bid now</a> 
 				</div>
