@@ -78,11 +78,14 @@ td {
 						</div>
 				</td>
 			</tr>
-		
 		</table>
 		<hr size = "5%" color = "lightblue">
 		<h4><b>NOTICE:</b><br>The highest becomes the buyer of a particular livestock and the buyer and the seller are expected to hold conversation over the provided medium. The winner of the bid pays transport cost. </h4>
-		</div>
+		<div class = "footer">
+<?php include "contact_form.php" ?>
+</div>
+	</div>
+
 	
 </div>
 	</body>

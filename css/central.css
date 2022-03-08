@@ -242,17 +242,17 @@ border-radius:5px;
 text-align:center;
 }
 .wrapper1{ 
-	width:80%;
-	margin-left:10%; 
-	border-radius:1px;
-	padding-left:4%;
-	background-color:#F8F8FF;
-	padding-bottom:5%;
-	margin-bottom:5%;
-	margin-top:0%;
-	border-left: 1px solid #D3D3D3;
-	border-right: 1px solid #D3D3D3;
-	border-bottom: 1px solid #D3D3D3;
+width:80%;
+margin-left:10%; 
+border-radius:1px;
+padding-left:4%;
+background-color:#F8F8FF;
+padding-bottom:5%;
+margin-bottom:5%;
+margin-top:0%;
+border-left: 1px solid #D3D3D3;
+border-right: 1px solid #D3D3D3;
+border-bottom: 1px solid #D3D3D3;
 }
 .wrapper1 fieldset{ 
 	margin-right:10%;
@@ -287,13 +287,7 @@ text-align:center;
   border-radius:5px;
   margin-bottom:5%;
 }
-.footer {
-	margin-bottom:0px;
-	margin-left:45%;
-	font-size:14px;
-	color:black;
-	font-style:italic;
-}
+
 .wrapper_edit{ 
 	width:90%; 
 	margin-left:5%;
@@ -612,7 +606,7 @@ text-align:center;
 	margin-left:0%;
 	margin-right:0%;
 	background-color:#F0F8FF;
-	padding-left:5%;		
+		
 	}
 .contact-group1{
 	font-size:22px;
@@ -629,7 +623,7 @@ text-align:center;
 	}
 .contact{
 	display:block;
-	width:90%;
+	width:100%;
 	height:calc(1.3em + .60rem + 2px);	
 	font-size:14px;
 	font-weight:400;
@@ -643,7 +637,7 @@ text-align:center;
 	margin-top:1%;
 }
 .contact-group input[type = submit]{
-  color:white;
+  color:black;
   background-color:brown;
   font-size: 15px;
   padding:1%;
@@ -654,4 +648,11 @@ text-align:center;
 }
 .contact-group label{
 	text-align:center;
+}
+.footer {
+	font-size:14px;
+	color:black;
+	font-style:italic;
+	float:left;
+	background-color: black;
 }

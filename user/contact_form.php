@@ -1,10 +1,6 @@
 
-<?php 
-include("master.php");
-?>
-<div class = "innercontainer">
-<div class = "childpane">
-<div class = "contact-group1">
+
+
 	<p>Reach us by filling this form</p>
 	<form action="new_message.php" method="post">
 	  <div class="contact-group">
@@ -27,6 +23,3 @@ include("master.php");
 	  <input type="submit" name "submit" value = "Send Message"/>
 	  </div>
 	</form>
-	</div>
-</div>
-</div>
