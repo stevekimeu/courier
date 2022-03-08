@@ -8,7 +8,7 @@ $sql = "SELECT * FROM tbl_order WHERE username = '$username'";
 $result = dbQuery($sql);	
 
 ?>
-
+<div class = "innercontainer">
 <div class = "displayanimalpane">	
    <p>My Bids</p>  
   <table cellpadding="10" cellspacing="2" width = "100%" >

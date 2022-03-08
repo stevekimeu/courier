@@ -52,11 +52,11 @@ if($sql->num_rows > 0){
 <table width = "100%">
 	<tr>
 		<td width ="100%" align = "center">	
-		  <a href="shop_animals.php">Bid Animals</a>
-		  <a href="sell_livestock.php">Auction Animal</a>		  
-		  <a href="myposting.php">On Sale</a>
+		  <a href="shop_animals.php">Bid Livestock</a>
+		  <a href="sell_livestock.php">Add Livestock</a>		  
+		  <a href="myposting.php">Edit Livestock Details</a>
 		  <a href="bids.php">My Livestock Bidders</a>
-		  <a href="mybids.php">Bids on Livestock</a>			  
+		  <a href="mybids.php">My Bids on Others</a>			  
 		  <a href="auctionresults.php">Results</a>			  
 				  
 		</td>

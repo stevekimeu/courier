@@ -17,7 +17,7 @@ if($query->num_rows > 0){
 		$date2=date_create(date("y-m-d"));
 		$diff=date_diff($date2,$date1);
 ?>
-<div class = "innercontainer">
+
 <div class = "displayanimal">		
 	<table >
 		<tr>

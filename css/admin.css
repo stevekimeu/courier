@@ -109,7 +109,7 @@
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 5px;
   margin-right: 1%;
   background-color: #E6E6FA; 
@@ -274,6 +274,13 @@
 	color:lightblue;
 	font-family: Consolas,"courier new";
 }
+.displayanimal_tab a:hover{
+	font-size:19px;
+	color:lightblue;
+	font-family: Consolas,"courier new";
+	text-align: center;
+	font-weight:bolder;
+}
 .displayanimal1{
 	width:24%;
 	float:left;
@@ -306,6 +313,7 @@
 	text-align:center;
 	background-color:white;
 	padding:4%;
+	line-height: 100%;
 }
 
 .displayanimal1_tab{
@@ -356,17 +364,26 @@
 	color:red;
 }
 .displayanimal2_tab{
-	background-color:green;
+	background-color:#F8F8FF;
+	border:1px solid #F8F8FF;
 	width:100%;
 	padding:1%;
-	text-decoration:none;	
-	text-align:center;
 }
 .displayanimal2_tab a{
 	text-decoration:none;
-	font-size:20px;
-	color:white;
+	font-size:15px;
+	color:brown;
 	margin-top:2%;
+	font-family: Consolas,"courier new";
+	border:1px solid #696969;
+  border-bottom:5px solid green;
+  padding:5px;
+}
+.displayanimal2_tab a:hover{
+	margin-top:2%;
+	font-family: Consolas,"courier new";
+	text-align: center;
+	font-weight:bolder;
 }
 .displayanimalpane{
 	width:80%;

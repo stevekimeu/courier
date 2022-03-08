@@ -22,27 +22,38 @@ $data = mysqli_fetch_array($sql); // fetch data
 	<link href="../css/central.css" rel="stylesheet" type="text/css">
 	<script src="https://kit.fontawesome.com/4cb2645454.js" crossorigin="anonymous"></script>	
 	<link rel="icon" href="http://localhost/mulling_logo.jpg" type="image/icon type">
-	
+
+	<style>
+table {
+  table-layout: fixed ;
+  width: 100% ;
+}
+td {
+  width: 50% ; 
+  padding-left:0%;
+  padding-bottom:0%;
+}
+</style>	
 	</head>
 	<body>
 
 	<?php include("master.php"); ?>
 			
-<div class = "childpane">
-<div class = "displayanimal2">	
+<div class = "innercontainer">
+<div class = "wrapper1">	
 			<table  width = "100%">
 				<tr>
 					<td>
 					<img src="../images/person.png" width ="60%" height = "300" alt = "No Picture" align = "center"/>
 			
 			</td><td align = "left">
-					<h2>&nbsp;<?php echo $data['fullname'];?></h2>										
-					<h3>&nbsp;<?php echo $data['region'];?></h3>
-					<h4>&nbsp;+254<?php echo $data['phonenumber'];?></h4>					
-					<p>&nbsp;<?php echo $data['email'];?></p>	
+					<h2>Name of Dealer:&nbsp;<?php echo $data['fullname'];?></h2>										
+					<h3>Region:&nbsp;<?php echo $data['region'];?></h3>
+					<h4>Phone Number: &nbsp;+254<?php echo $data['phonenumber'];?></h4>					
+					<p>E-mail address:&nbsp;<?php echo $data['email'];?></p>	
 			
 			<div class = "displayanimal2_tab">
-					<a href = "order.php?cid=<?php echo $cid; ?>">Click to bid now</a> 
+					<a href = "order.php?cid=<?php echo $cid; ?>">Click here to bid now</a> 
 				</div>
 				</td>
 			</tr>

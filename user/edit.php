@@ -13,7 +13,7 @@ $data = mysqli_fetch_array($sql); // fetch data
 
 	<?php include("master.php"); ?>
 			
-	
+	<div class = "innercontainer">
 	<div class = "childpane">
 		<div class = "wrapper_edit">
 

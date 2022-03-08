@@ -24,9 +24,21 @@ extract($data);**/
 		<link href="../css/central.css" rel="stylesheet" type="text/css">
 		<script src="https://kit.fontawesome.com/4cb2645454.js" crossorigin="anonymous"></script>	
 		<link rel="icon" href="http://localhost/mulling_logo.jpg" type="image/icon type">
+		<style>
+table {
+  table-layout: fixed ;
+  width: 100% ;
+}
+td {
+  width: 50% ; 
+  padding-left:0%;
+  padding-bottom:0%;
+}
+</style>
 	</head>
 <body>
 <?php include("master.php"); ?>	
+<div class = "innercontainer">
 		<div class = "wrapper1">
 			<?php
 				if(isset($_POST['submit']))
@@ -90,7 +102,7 @@ extract($data);**/
 				</td><td>
 			<div class="form-group">
 					<label>Please give more specifications</label><br><br>		
-					<textarea  name="comments" id="comments" cols = "50" rows= "3" required>	</textarea>
+					<textarea  name="comments" id="comments" cols = "40" rows= "3" required>	</textarea>
 			</div>
 			</td></tr>
 			<tr><td colspan = "2">

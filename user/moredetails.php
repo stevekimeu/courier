@@ -26,7 +26,18 @@ extract($data);**/
 	<link href="../css/central.css" rel="stylesheet" type="text/css">
 	<script src="https://kit.fontawesome.com/4cb2645454.js" crossorigin="anonymous"></script>	
 	<link rel="icon" href="http://localhost/mulling_logo.jpg" type="image/icon type">
-	
+
+<style>
+table {
+  table-layout: fixed ;
+  width: 100% ;
+}
+td {
+  width: 33.3% ; 
+  padding-left:0%;
+  padding-bottom:0%;
+}
+</style>	
 	</head>
 	<body>
 
@@ -42,34 +53,37 @@ extract($data);**/
 	
 	
 	?>
-<div class = "childpane">
-<div class = "displayanimal2">	
+<div class = "innercontainer">
+<div class = "wrapper1">
 			<table  width = "100%">
 				<tr>
 					<td>
-					<img src="<?php echo $imageURL; ?>" width ="100%" height = "225" alt = "No Picture"/>
-						<div class = "displayanimal2_tab">
-							<a href = "order.php?cid=<?php echo $cid; ?>">Click to bid now</a> 
-						</div>				
+					<img src="<?php echo $imageURL; ?>" width ="auto" height = "225" alt = "No Picture"/>
+					<h2>&nbsp;<?php echo $data['category']; ?></h2>					
 			</td><td>
-					<h3>Opening Bid in Kshs.&nbsp;<?php echo $data['price']; ?></h3>					
+					<h4 style = "color:brown;">Opening Bid in Kshs.&nbsp;<?php echo $data['price']; ?></h3>					
 					<h4>Location:&nbsp;<?php echo $data['location']; ?></h4>	
-					<p>&nbsp;<?php echo $data['category']; ?></p>
+					
 					<p>Age:&nbsp;<?php echo $data['age']; ?>&nbsp;Months</p>
 					<p>Weight:&nbsp;<?php echo $data['weight']; ?>&nbsp;Kgs</p>
 					<p>Posted On:&nbsp;<?php echo $data['Created_On']; ?></p>
 					<p>Bidding Closes:&nbsp;<?php echo $auction; ?></p>					
-					<h5>Bidding to close in &nbsp;<?php echo $diff->format("%R%a days");?> </h5>
+					<h5 style = "color:red;">Bidding to close in &nbsp;<?php echo $diff->format("%R%a days");?> </h5>
+				</td><td>
 				<div class = "displayanimal2_tab">
-					<a href = "dealer.php?cid=<?php echo $cid; ?>">For more information, Contact Dealer</a> 
-				</div>
+					<a href = "dealer.php?cid=<?php echo $cid; ?>">For more information Contact Dealer</a> 
+				</div><br><br><br>
+				<div class = "displayanimal2_tab">
+							<a href = "order.php?cid=<?php echo $cid; ?>">Click here to bid now</a> 
+						</div>
 				</td>
 			</tr>
+		
 		</table>
+		<hr size = "5%" color = "lightblue">
+		<h4><b>NOTICE:</b><br>The highest becomes the buyer of a particular livestock and the buyer and the seller are expected to hold conversation over the provided medium. The winner of the bid pays transport cost. </h4>
 		</div>
-<div class = "displayanimal2_extra">
-<p>The highest becomes the buyer of a particular livestock and the buyer and the seller are expected to hold conversation over the provided medium. The winner of the bid pays transport cost. </p>
-	</div>	
+	
 </div>
 	</body>
 </html>
