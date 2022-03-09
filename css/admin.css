@@ -266,13 +266,12 @@
 	line-height:80%;
 	margin-bottom:1%;
 	margin-left:1%;	
-	font-size:12px;
 	background-color:#F0FFF0;
 	border:1px solid #D3D3D3;
 }
 .displayanimal p{
 	color:green;
-	font-size:15px;
+	font-size:12px;
 	line-height:20%;	
 }
 .displayanimal h1{
@@ -280,11 +279,12 @@
 	text-align:center;
 	background-color:white;
 	padding:4%;
-	font-size:16px;
+	font-size:12px;
 }
 .displayanimal h3{
 	color:black;
 	text-align:center;
+	font-size:12px;
 }
 .displayanimal_tab{
 	background-color: #696969;

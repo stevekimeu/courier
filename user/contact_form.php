@@ -1,6 +1,7 @@
 
 
 
+<div class = "contact-group1">
 	<p>Reach us by filling this form</p>
 	<form action="new_message.php" method="post">
 	  <div class="contact-group">
@@ -23,3 +24,4 @@
 	  <input type="submit" name "submit" value = "Send Message"/>
 	  </div>
 	</form>
+	</div>

@@ -41,7 +41,7 @@ $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 	$Breed = $_POST['Breed'];
 	$Price = $_POST['Price'];	
 	$PaymentMethod = $_POST['PaymentMethod'];
-		
+			
 	$sql = "INSERT INTO tbl_courier (category, age, weight, location, sex, auction_date, description, picture , price,paymentmethod, Created_On,postedby)
 			VALUES('$Category', '$Age','$Weight', '$Location', '$Purebred','$AuctionDate','$Breed', '$fileName','$Price','$PaymentMethod',NOW(),'$username')";	
 	if (mysqli_query($dbConn, $sql)) {
