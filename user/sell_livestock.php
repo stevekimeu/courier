@@ -225,7 +225,7 @@
 			</td><td>
 			<div class="form-group">
 				<label>Farmer Quoted Price in Kshs.:</label><br>	
-				<input type='currency' id="Price"  placeholder='Type a number & click outside' class = "form-control1"/>
+				<input name="Price" id="Price" type="TEXT" class = "form-control1">
 			</div>
 			</tr></td>
 			<tr><td>
@@ -245,52 +245,12 @@
 	</td></tr>
 	<tr width = "100%"><td colspan = "2">
 <div class="form-group">
-    <input type="submit" name="submit" value="Sell Livestock">
+    <input type="submit" name="submit" value="Add Livestock">
 </div>
 	</td></tr>
 	</fieldset>
 </table>
 </form>
-
-
-<script>
-var currencyInput = document.querySelector('input[type="currency"]')
-var currency = 'GBP' // https://www.currency-iso.org/dam/downloads/lists/list_one.xml
-
- // format inital value
-onBlur({target:currencyInput})
-
-// bind event listeners
-currencyInput.addEventListener('focus', onFocus)
-currencyInput.addEventListener('blur', onBlur)
-
-
-function localStringToNumber( s ){
-  return Number(String(s).replace(/[^0-9.-]+/g,""))
-}
-
-function onFocus(e){
-  var value = e.target.value;
-  e.target.value = value ? localStringToNumber(value) : ''
-}
-
-function onBlur(e){
-  var value = e.target.value
-
-  var options = {
-      maximumFractionDigits : 2,
-      currency              : currency,
-      style                 : "currency",
-      currencyDisplay       : "symbol"
-  }
-  
-  e.target.value = (value || value === 0) 
-    ? localStringToNumber(value).toLocaleString(undefined, options)
-    : ''
-}
-</script>
-
-
 <div class = "footer">
 	Livestock@2022
 </div>
