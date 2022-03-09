@@ -15,11 +15,10 @@ require_once('../admin/library.php');
 
 <body>
  <div class = "container">
-  <div class = "centeredpage">
 	<div class = "navlayer6">
 	<div class="left">
-	<a href = "#"> <img src="../images/fb.png" height="25" width="100"></a> 
-	<a href = "#"><img src="../images/tt.png" height="25" width="100"></a>  
+	<a href = "#"> <img src="../images/fb.png" height="30" width="25">&nbsp;&nbsp;Facebook</a> 
+	<a href = "#"><img src="../images/tt.png" height="30" width="25">&nbsp;&nbsp;Twitter</a>  
 </div>
 	<div class="right">		
 	    <a href="user_login.php">Login</a>
