@@ -16,6 +16,16 @@ require_once('../admin/library.php');
 <body>
  <div class = "container">
   <div class = "centeredpage">
+	<div class = "navlayer6">
+	<div class="left">
+	<a href = "#"> <img src="../images/fb.png" height="25" width="100"></a> 
+	<a href = "#"><img src="../images/tt.png" height="25" width="100"></a>  
+</div>
+	<div class="right">		
+	    <a href="user_login.php">Login</a>
+		<a href="signup.php">Register</a>
+	  </div>
+</div>
   <div class = "searchnav">
 	<form name = "search" action = "search.php" method = "POST">
 		<table width = "100%">
@@ -39,8 +49,6 @@ require_once('../admin/library.php');
 	
 	<div class="right">	
 		<a href="contact_form.php">Contact Us</a>
-	    <a href="user_login.php">Login</a>
-		<a href="signup.php">Register</a>
 	  </div>
 	</div>
 	
