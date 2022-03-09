@@ -78,6 +78,10 @@
 	 background-color: #E6E6FA;
      color: black;	
 }
+.navlayer4 a:active {
+	text-decoration: none;
+    color: #03B003;
+  }
 .navlayer1 a {
   float: left;
   color: white;
@@ -276,6 +280,13 @@
 }
 .displayanimal h1{
 	color:green;
+	text-align:center;
+	background-color:white;
+	padding:4%;
+	font-size:12px;
+}
+.displayanimal h2{
+	color:black;
 	text-align:center;
 	background-color:white;
 	padding:4%;

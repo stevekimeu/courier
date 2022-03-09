@@ -11,6 +11,7 @@
 		
 		if(mysqli_num_rows($result) > 0){
 		?>
+		<div class = "innercontainer">
 		<div class = "childpane">
 			<div class = "searchoutput">
 				<p>Search Results...</p>

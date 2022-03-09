@@ -23,7 +23,7 @@ if($query->num_rows > 0){
 		<tr>
 			<td align = "center" color = "green">
 					<img src="<?php echo $imageURL; ?>" width ="80%" height = "192" alt = "No Picture"/>
-					<h3>Opening Bid: Kshs.&nbsp;<?php echo $price; ?></h3>					
+					<h3>Opening Bid: Kshs.&nbsp;<?php echo number_format($price,2); ?></h3>					
 					<h4>&nbsp;<?php echo $location; ?></h4>	
 					<p>&nbsp;<?php echo $category; ?></p>
 					<p>Posted On:&nbsp;<?php echo $posted; ?></p>

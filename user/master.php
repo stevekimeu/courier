@@ -52,7 +52,7 @@ if($sql->num_rows > 0){
 	
 	</div>
 	<div class="right">		
-		<a href="user_message.php">Inbox</a>
+		<a href="user_message.php">Notification</a>
 		<a href="contact_form.php">Contact Us</a>
 		<a href="logout.php">Logout</a>
 	  </div>
