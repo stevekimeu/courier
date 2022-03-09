@@ -112,23 +112,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
         }        
         ?>
-
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Username</label>
-                <input type="text" name="username" placeholder = "emailaddress" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <input type="text" name="username"  class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
-            </div>    
+            </div>    <br>
             <div class="form-group">
                 <label>Password</label>
                 <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
-            </div>
+            </div><br>
             <div class="user_login" align = "center">
                 <input type="submit" value="Login">
             </div>
-			<p><a href="forgot_password.php">Forgot Password</a></p>
-            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
+			<p>Forgot Password?&nbsp;&nbsp;<a href="forgot_password.php">Reset here</a></p>
+            <p>OR Don't have an account? </p> <br><br>
+            <div class="user_login" align = "center">
+            <a href="signup.php">Register Here </a>
+            </div>
+          <br>
 			<p><a href="Home.php">Go to main Page</a>.</p>
         </form>
     </div>
