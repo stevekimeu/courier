@@ -34,7 +34,7 @@ if($query->num_rows > 0){
 		<tr>
 			<td align = "center" color = "green">
 					<img src="<?php echo $imageURL; ?>" width ="80%" height = "192" alt = "No Picture"/>
-					<h1>Kshs.&nbsp;<?php echo $price; ?></h1>					
+					<h1>Kshs.&nbsp;<?php echo number_format($price,2); ?></h1>					
 					<h2>&nbsp;<?php echo $location; ?></h2>	
 					<p>Posted On:&nbsp;<?php echo $posted; ?></p>
 					<p>Date of Auction:&nbsp;<?php echo $auction; ?></p>

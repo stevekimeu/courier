@@ -33,7 +33,7 @@
 							<td><?php echo $row['category']; ?> </td>
 							<td><?php echo $row['sex']; ?> </td>
 							<td><?php echo $row['weight']; ?>Kgs</td>
-							<td>Kshs.<?php echo $row['price']; ?></td>
+							<td>Kshs.<?php echo number_format($row['price'],2); ?></td>
 							<td><?php echo $row['location']; ?></td>
 							<td><a href = "moredetails.php?cid=<?php echo $row['cid']; ?>">View</a></td>							
 							</td>
