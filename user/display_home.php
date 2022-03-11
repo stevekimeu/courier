@@ -40,7 +40,9 @@ if($query->num_rows > 0){
 	</table>	
 </div>
 <?php }
-}else{ ?>
+}
+
+else{ ?>
     <p>Livestock of that Category not found...</p>
 <?php }
 // Display status message

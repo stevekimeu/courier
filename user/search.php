@@ -5,7 +5,7 @@
 		Global $dbConn;
 		$search = mysqli_real_escape_string($dbConn, $_REQUEST['search']);     
 
-		$sql = "SELECT * FROM tbl_courier WHERE (`category` LIKE '%".$search."%') OR (`location` LIKE '%".$search."%') OR (`sex` LIKE '%".$search."%') OR (`price` LIKE '%".$search."%') OR (`description` LIKE '%".$search."%') OR (`auction_date` LIKE '%".$search."%')"  OR die(mysql_error());
+		$sql = "SELECT * FROM tbl_courier WHERE (`category` LIKE '%".$search."%') OR (`location` LIKE '%".$search."%') OR (`sex` LIKE '%".$search."%') OR (`price` LIKE '%".$search."%') OR (`description` LIKE '%".$search."%') OR (`auction_date` LIKE '%".$search."%')"  OR die(mysqli_error($dbConn));
 
 		$result = mysqli_query($dbConn, $sql)or die( mysqli_error($dbConn));
 		
