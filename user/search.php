@@ -14,7 +14,7 @@
 		<div class = "innercontainer">
 		<div class = "childpane">
 			<div class = "searchoutput">
-				<p>Search Results...</p>
+				<p><b>Search Results...</b></p>
 				<table width = "100%">      
 					  <tr class="BoldRED" bgcolor="#FFFFFF" style="height:20px;" style =>
 						  <td style="font-weight:bold"  width="20%">Animal Picture</td>
@@ -49,7 +49,7 @@
 			<div class = "childpane">
 				<div class = "searchoutput">
 				<?php
-					echo 'Nothing found!';
+					echo '<b>Nothing found</b>';
 				}
 			}
 				 else 
@@ -60,7 +60,7 @@
 				<div class = "childpane">
 				<div class = "searchoutput">
 				<?php
-					echo 'Nothing to search!';					
+					echo '<b>Search field is empty!</b>';					
 				
 					}
 					
