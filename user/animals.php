@@ -27,6 +27,7 @@ $result = dbQuery($sql);
 		<?php
 		while($data = dbFetchAssoc($result)){
 		extract($data);	
+		$imageURL = 'uploads/'.$row["picture"];
 		?>
 		<tr  onMouseOver="this.bgColor='lightgreen';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF">	      
 		  <td><?php echo $data['category']; ?></td>
@@ -36,7 +37,7 @@ $result = dbQuery($sql);
 		   <td><?php echo $data['sex']; ?></td>
 		  <td><?php echo $data['auction_date']; ?></td>
 		  <td><?php echo $data['price']; ?> </td>					  
-		  <td><img src = "data:image/jpg;charset=utf8;base64,<?php echo base64_encode($data['']);?>" alt = "can not display picture"> </td>
+		  <td><img src="<?php echo $imageURL; ?>" width ="100%" height = "240" alt = "No Picture"/></td>
 	
 			</tr>
 		<?php

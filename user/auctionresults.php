@@ -5,13 +5,13 @@ include("results.php");
 require_once('../admin/database.php');
 require_once('../admin/library.php');
 $cid = '';
-$query = $dbConn->query("SELECT * FROM tbl_results ORDER BY category ASC");
+$query = $dbConn->query("SELECT * FROM tbl_results ORDER BY category");
 if($query->num_rows > 0){
     while($row = $query->fetch_assoc()){
         $imageURL = 'uploads/'.$row["picture"];
 		$Category = $row["category"];
-		$Sold = $row["sold_at"];
-		$auction = $row["auction_date"];
+		$Sold = $row["bid"];
+		$auction = $row["auction"];
 ?>
 <div class = "childpane">
 <div class = "displayanimal">		
