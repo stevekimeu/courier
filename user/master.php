@@ -28,7 +28,9 @@ if($sql->num_rows > 0){
 <link rel="icon" href="http://localhost/courier/images/log.png" type="image/icon type">
 <link href = "../css/central.css" type = "text/css" rel = "stylesheet" />
 <link href = "../css/topcss.css" type = "text/css" rel = "stylesheet" />
+<link href = "../css/mobile.css" type = "text/css" rel = "stylesheet" />
 <script src="https://kit.fontawesome.com/4cb2645454.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="config.js"></script>  	
 <link href = "../css/admin.css" type = "text/css" rel = "stylesheet" />  
 </head>
@@ -57,7 +59,7 @@ if($sql->num_rows > 0){
 		<a href="logout.php">Logout</a>
 	  </div>
 	</div>
-	<div class="navlayer3">
+	<div class="navlayer3" id="top">
 <table width = "100%">
 	<tr>
 		<td width ="100%" align = "center">	
@@ -66,7 +68,8 @@ if($sql->num_rows > 0){
 		  <a href="myposting.php">Edit Livestock Details</a>
 		  <a href="bids.php">My Livestock Bidders</a>
 		  <a href="mybids.php">My Bids on Others</a>			  
-		  <a href="auctionresults.php">Results</a>			  
+		  <a href="auctionresults.php">Results</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>			  
 				  
 		</td>
 	</tr>
@@ -76,6 +79,19 @@ if($sql->num_rows > 0){
 	
 	</div>
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("top");
+  if (x.className === "navlayer3") {
+    x.className += " responsive";
+  } else {
+    x.className = "navlayer3";
+  }
+}
+</script>
+
+</body>
+</html>
 
 </body>
 </html>

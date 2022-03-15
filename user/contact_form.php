@@ -1,5 +1,13 @@
+<?php 
+	include("master.php");
 
-
+	?>
+	
+	<div class = "innercontainer">
+  <div class = "wrapper1">
+  
+	<a href = "#"> <img src="../images/fb.png" height="30" width="25">&nbsp;&nbsp;Facebook</a> 
+	<a href = "#"><img src="../images/tt.png" height="30" width="25">&nbsp;&nbsp;Twitter</a>  
 
 <div class = "contact-group1">
 	<p>Reach us by filling this form</p>
@@ -24,4 +32,6 @@
 	  <input type="submit" name "submit" value = "Send Message"/>
 	  </div>
 	</form>
+	</div>
+	</div>
 	</div>

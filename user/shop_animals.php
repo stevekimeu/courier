@@ -19,8 +19,7 @@ if($query->num_rows > 0){
 		$auction = $row["auction_date"];
 		$posted = $row["Created_On"];
 		$cid = $row["cid"];
-	?>
-	
+	?>	
 <div class = "childpane">
 <div class = "displayanimal">		
 	<table width = "100%">
@@ -30,7 +29,7 @@ if($query->num_rows > 0){
 					<h1>Opening Bid: &nbsp; Ksh.&nbsp;<?php echo number_format($price,2); ?></h1>			
 					<h3>&nbsp;<?php echo $category; ?></h3>						
 					<h3>&nbsp;<?php echo $location; ?></h3>					
-					<p>Bid CLoses On:&nbsp;<?php echo $auction; ?></p>		
+					<p>Bid CLoses On:&nbsp;<?php echo $auction;?></p>		
 			<div class = "displayanimal_tab">
 					<a href = "moredetails.php?cid=<?php echo $cid; ?>">More Details</a> 
 			</div>					
@@ -46,6 +45,5 @@ if($query->num_rows > 0){
 }else{ ?>
     <p>Livestock of such Category not found...</p>
 <?php }
-// Display status message
 
 ?>

@@ -1,0 +1,68 @@
+
+.navlayer3 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navlayer3 .icon {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .navlayer3 a:not(:first-child) {
+      display: none;
+    }
+  .navlayer3 a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navlayer3.responsive {
+      position: relative;
+    }
+  .navlayer3.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navlayer3.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .displayanimal{
+	width:100%;
+  }
+  .searchnav td{
+    width:100%;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .navlayer3 a:not(:first-child) {
+        display: none;
+      }
+    .navlayer3 a.icon {
+      float: right;
+      display: block;
+    }
+  
+    .navlayer3.responsive {
+        position: relative;
+      }
+    .navlayer3.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navlayer3.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .displayanimal{
+        width:32%;
+    }
+    .searchnav td{
+        width:100%;
+    }
+  }
