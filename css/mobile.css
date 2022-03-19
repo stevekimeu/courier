@@ -1,4 +1,5 @@
-
+@import "admin.css";
+@import "central.css";
 .navlayer3 a.active {
   background-color: #04AA6D;
   color: white;

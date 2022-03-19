@@ -28,8 +28,7 @@
 	</div>
 	<div class="navlayer2">
 		<div class = "left">
-			<a href="message.php" ><i class="fas fa-envelope">&nbsp;</i>Messages</a>		
-			<a href="#" ><i class="fas fa-bell">&nbsp;</i>Notifications</a>
+			<a href="message.php" ><i class="fas fa-envelope">&nbsp;</i>Messages</a>	
 			<a href="receive_order.php" ><i class="fa-solid fa-envelope-open-text">&nbsp;&nbsp;</i>All Bids</a>
 			</div>
 		

@@ -133,14 +133,14 @@ function get_rand_id($length)
 return $rand_id;
 } 
 
-function checkUser($un, $pwd, $city) {
+function checkUser($un, $pwd) {
 	if($un == 'admin' && $pwd = 'admin123') {
 		$_SESSION['user_name'] = 'Admin';
 		$_SESSION['user_type'] = 'admin-role';
 		header('Location: admin.php');
 		//echo 'Iam here.......';
 	}else {
-		$sql = "SELECT officer_name FROM tbl_courier_officers WHERE officer_name = '$un' AND off_pwd = '$pwd' AND office = '$city'";
+		$sql = "SELECT email FROM tbl_offices WHERE email = '$un' AND password = '$pwd'";
 		
 		$result = dbQuery($sql);
 		$no = dbNumRows($result);

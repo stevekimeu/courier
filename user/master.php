@@ -43,7 +43,7 @@ if($sql->num_rows > 0){
 		<td>
 			<a href = "Home.php"> <img src="../images/logos.png" height="60" width="400"></a> 
 		</td>
-		<td align "right" >  Quick Search Bar &nbsp; <input type="text" name = "search" placeholder="Search for Livestock"  >&nbsp;<input name = "submit" type="submit" Value="Search" >
+		<td align "right" ><p>  Quick Search  &nbsp; <input type="text" name = "search" placeholder="Search for Livestock"  >&nbsp;<input name = "submit" type="submit" Value="Search" ></p>
 		</td>
 		</table>
 	</form>
@@ -63,6 +63,7 @@ if($sql->num_rows > 0){
 <table width = "100%">
 	<tr>
 		<td width ="100%" align = "center">	
+		  <a href="javascript:void(0);" class = "menu" onclick="myFunction()">MENU</a>
 		  <a href="shop_animals.php">Bid Livestock</a>
 		  <a href="sell_livestock.php">Add Livestock</a>		  
 		  <a href="myposting.php">Edit Livestock Details</a>

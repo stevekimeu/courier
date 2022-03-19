@@ -1,4 +1,4 @@
-
+@import "mobile.css";
 /*whole page styling*/
 .container{
  width:100%;
@@ -683,3 +683,6 @@ border-bottom: 1px solid #D3D3D3;
 	float:left;
 	margin-left:0%;
 }
+
+
+

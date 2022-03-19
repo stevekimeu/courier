@@ -25,7 +25,6 @@ isUser();
 			<p>Notifications</p>
 		<ul style="list-style-type:circle;">
 		    <li><a href="message.php" ><i class="fas fa-envelope">&nbsp;</i>Messages</a></li>
-			<li><a href="#" ><i class="fas fa-bell">&nbsp;</i>Notifications</a></li>
 			<li><a href="receive_order.php" ><i class="fas fa-envelope-open-text">&nbsp;&nbsp;</i>All Bids</a></li>
 		</ul>
 	</div>	
@@ -51,8 +50,6 @@ isUser();
 	<div class = "wrapperright">
 			<p>Logout</p>
 		<ul style="list-style-type:circle;">
-			<li><a href="#" ><i class="fas fa-envelope-open-text">&nbsp;&nbsp;</i>Shopping Cart</a></li>
-		    <li><a href="#"><i class="fas fa-envelope">&nbsp;&nbsp;</i>User Logs</a></li>
 			<li><a href="process.php?action=logOut"><i class="fas fa-bell">&nbsp;&nbsp;</i>Logout</a></li>
 		</ul>
 	</div>				

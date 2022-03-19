@@ -1,3 +1,4 @@
+@import "central.css";
 
 /*Administrator CSS*/
 .outerlayer{	
@@ -273,6 +274,7 @@
 	background-color:#F0FFF0;
 	border:1px solid #D3D3D3;
 }
+
 .displayanimal p{
 	color:green;
 	font-size:12px;
@@ -342,13 +344,7 @@
 	padding:4%;
 	font-size: 18px;
 }
-.displayanimal h2{
-	color:black;
-	text-align:center;
-	background-color:white;
-	padding:4%;
-	line-height: 100%;
-}
+
 
 .displayanimal1_tab{
 	background-color:green;
@@ -497,3 +493,196 @@
 	margin-top:5px;
 	text-align:center;
    }
+  .menu {
+		display:none; 
+	  }  
+
+
+
+   /* design for mobile */
+   .navlayer3 a.active {
+	background-color: #04AA6D;
+	color: white;
+  }
+  
+  .navlayer3 .icon {
+	display: none;
+  }
+  
+  @media screen and (max-width: 480px) {
+	.navlayer3 a:not(:first-child) {
+		display: none;
+	  }
+	  .navlayer4 .right{
+		  width:100%;
+		  padding-right:0%;
+		  
+	  }
+	  .navlayer4 .right a{
+		width:30%;
+		font-size: 10px;
+		padding-left:0%;
+		padding-right:0%;
+	}
+	  .navlayer4 .left{
+		display:none;
+		
+	}
+
+	.navlayer3 a.icon {
+	  float: right;
+	  display: block;
+	}
+  
+	.navlayer3.responsive {
+		position: relative;
+	  }
+	.navlayer3.responsive .icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.navlayer3.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.displayanimal{
+	  width:100%;
+	}
+	.displayanimal h1{
+		font-size:12px;
+	  }
+	.searchnav img{
+	  width:100%;
+	  height:20%;
+	  }
+	.searchnav table td{
+		width:100%;
+		float:left;
+		font-size:10px;
+		}
+	.searchnav table td input[type = text]{
+		width:50%;
+		font-size:10px;
+		}
+	.searchnav table td input[type = submit]{
+			width:20%;
+			font-size:10px;
+			}
+	.displayanimalpane table td{
+		font-size: 8px;
+	}
+	.wrapper_edit p{
+		font-size: 12px;
+	}
+	.wrapper_edit td{
+		width:100%;
+		float:left;
+	}
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+	  .navlayer3 a:not(:first-child) {
+		  display: none;
+		}
+	  .navlayer3 a.icon {
+		float: right;
+		display: block;
+	  }
+	
+	  .navlayer3.responsive {
+		  position: relative;
+		}
+	  .navlayer3.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	  .navlayer3.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	  }
+	  .navlayer4 .left{
+		display:none;
+		
+	}
+	  .displayanimal{
+		  width:49%;
+	  }
+	  .displayanimal p{
+		font-size:12px;	
+	}
+	.displayanimal h1{
+		
+		font-size:10px;
+	}
+	.displayanimal h2{
+	
+		font-size:10px;
+	}
+	.displayanimal h3{
+	
+		font-size:10px;
+	}
+	.searchnav img{
+		width:100%;
+		height:20%;
+		}
+	.searchnav table td{
+		  width:100%;
+		  float:left;
+		  font-size:12px;
+		  }
+	.searchnav table td input[type = text]{
+		  width:50%;
+		  font-size:12px;
+		  }
+	.searchnav table td input[type = submit]{
+			  width:20%;
+			  font-size:10px;
+			  }
+	}
+	@media screen and (min-width: 769px) and (max-width: 1100px) {
+		.navlayer3 a:not(:first-child) {
+			display: none;
+		  }
+		.navlayer3 a.icon {
+		  float: right;
+		  display: block;
+		}	  
+		.navlayer3.responsive {
+			position: relative;
+		  }
+		.navlayer3.responsive .icon {
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		}
+		.navlayer3.responsive a {
+		  float: none;
+		  display: block;
+		  text-align: left;
+		}
+		.displayanimal{
+			width:32%;
+		}
+		.displayanimal p{
+		  font-size:12px;	
+	  }
+	  .displayanimal h1{
+		  
+		  font-size:11px;
+	  }
+	  .displayanimal h2{
+	  
+		  font-size:10px;
+	  }
+	  .displayanimal h3{
+	  
+		  font-size:10px;
+	  }
+		.searchnav {
+			width:100%;
+		}
+	  }
