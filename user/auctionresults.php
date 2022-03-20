@@ -13,6 +13,7 @@ if($query->num_rows > 0){
 		$Sold = $row["bid"];
 		$auction = $row["auction"];
 ?>
+<div class = "innercontainer">
 <div class = "childpane">
 <div class = "displayanimal">		
 	<table width = "100%">
@@ -30,6 +31,7 @@ if($query->num_rows > 0){
 
 <?php }
 }else{ ?>
+<div class = "innercontainer">
 <div class = "childpane">
     <p>There are no auction Results currently, Kindly check in later</p>
 </div>

@@ -251,9 +251,5 @@
 	</fieldset>
 </table>
 </form>
-
-<div class = "footer">
-	Livestock@2022
-</div>
 </div>
 </div>

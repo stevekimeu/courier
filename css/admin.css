@@ -573,12 +573,33 @@
 	.displayanimalpane table td{
 		font-size: 8px;
 	}
+	.wrapper_edit{
+		width:100%;		
+		margin-left:0%;
+	}
 	.wrapper_edit p{
 		font-size: 12px;
 	}
 	.wrapper_edit td{
 		width:100%;
 		float:left;
+	}
+	.wrapper1{
+		width:100%;		
+		margin-left:0%;
+	}
+	.wrapper1 p{
+		font-size: 14px;
+	}
+	.wrapper1 td{
+		width:100%;
+		float:left;
+	}
+	.wrapper1 .form-group input[type = submit]{
+		width:50%;
+		font-size:14px;
+		float:left;
+		margin-left:0%;
 	}
   }
   @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -642,6 +663,37 @@
 			  width:20%;
 			  font-size:10px;
 			  }
+			  .displayanimalpane table td{
+				font-size: 10px;
+			}
+			.wrapper_edit{
+				width:100%;		
+				margin-left:0%;
+			}
+			.wrapper_edit p{
+				font-size: 14px;
+			}
+			.wrapper_edit td{
+				width:100%;
+				float:left;
+			}
+			.wrapper1{
+				width:100%;		
+				margin-left:0%;
+			}
+			.wrapper1 p{
+				font-size: 14px;
+			}
+			.wrapper1 td{
+				width:100%;
+				float:left;
+			}
+			.wrapper1 .form-group input[type = submit]{
+				width:50%;
+				font-size:14px;
+				float:left;
+				margin-left:0%;
+			}
 	}
 	@media screen and (min-width: 769px) and (max-width: 1100px) {
 		.navlayer3 a:not(:first-child) {
@@ -682,7 +734,49 @@
 	  
 		  font-size:10px;
 	  }
-		.searchnav {
+	  .searchnav img{
+		width:100%;
+		height:20%;
+		}
+	.searchnav table td{
+		  width:100%;
+		  float:left;
+		  font-size:12px;
+		  }
+	.searchnav table td input[type = text]{
+		  width:50%;
+		  font-size:12px;
+		  }
+	.searchnav table td input[type = submit]{
+			  width:20%;
+			  font-size:10px;
+			  }
+		.wrapper_edit{
+			width:100%;		
+			margin-left:0%;
+		}
+		.wrapper_edit p{
+			font-size: 16px;
+		}
+		.wrapper_edit td{
 			width:100%;
+			float:left;
+		}
+		.wrapper1{
+			width:100%;		
+			margin-left:0%;
+		}
+		.wrapper1 p{
+			font-size: 14px;
+		}
+		.wrapper1 td{
+			width:50%;
+			float:left;
+		}
+		.wrapper1 .form-group input[type = submit]{
+			width:50%;
+			font-size:14px;
+			float:left;
+			margin-left:0%;
 		}
 	  }
