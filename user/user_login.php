@@ -102,8 +102,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
 <div class = "user_loginbg">
-    <div class="wrapper_login">
-	
+    <div class="wrapper_login">	
         <h2>Login Form</h2>
         <p>Please fill in your credentials to login.</p>
 

@@ -17,8 +17,10 @@ require_once('../admin/library.php');
  <div class = "container">
 	<div class = "navlayer6">
 	<div class="left">
-	<a href = "#"> <img src="../images/fb.png" height="30" width="25">&nbsp;&nbsp;Facebook</a> 
-	<a href = "#"><img src="../images/tt.png" height="30" width="25">&nbsp;&nbsp;Twitter</a>  
+	<a href = "https://www.facebook.com"> <img src="../images/fb.png" height="30" width="25">&nbsp;&nbsp;Facebook</a> 
+	<a href = "https://twitter.com"><img src="../images/tt.png" height="30" width="25">&nbsp;&nbsp;Twitter</a>  
+	<a href = "#"><img src="../images/instagram.jpg" height="30" width="25">&nbsp;&nbsp;Instagram</a> 
+	<a href = "#"><img src="../images/call.jpg" height="30" width="25">&nbsp;&nbsp;+254711648268/+254769903170</a> 
 </div>
 	<div class="right">		
 	    <a href="user_login.php">Login</a>
@@ -40,9 +42,7 @@ require_once('../admin/library.php');
 	<div class="topnav">
 		<div class="left">
 		<a href="shop_animals.php">Bid an Animal</a>
-	  	<a href="sell_livestock.php">Auction Animal</a>
-		<a href="#breeding">Breeding Systems</a>
-	  	<a href="#news">Weekly Updates</a>
+	  	<a href="sell_livestock.php">Add Animal</a>
 	   	<a href="auctionresults.php">Results</a>
 	  </div>
 	

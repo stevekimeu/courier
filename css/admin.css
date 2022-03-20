@@ -164,23 +164,33 @@
 .navlayer6{
 	overflow: hidden;
 	background-color: #DCDCDC;
-	width:100%;	
+	width:100%;
 	/* border-bottom:1px solid lightgreen; */
 }
 .navlayer6 a{
 	text-decoration: none;
-	padding-left:5%;
+	padding-left:10%;
 	text-align: center;
     padding: 14px 16px;
     font-size: 16px;
 	color:black;
-	float:left;
-	line-height: 100%;
+	line-height: 100%;		
+	display: inline-block;
+   
 }
 
 .navlayer6 a:hover{
-	color:brown;
+	color:black;
     font-size: 16px;
+}
+.navlayer6 img{
+	display: inline-block;
+    vertical-align:-50%;
+}
+.navlayer6 .right a{
+	display: inline-block;
+    vertical-align:50%;
+	color:brown;
 }
 
 .fa-envelope{ 
@@ -601,6 +611,11 @@
 		float:left;
 		margin-left:0%;
 	}
+	.wrapper_login{
+		width:100%;
+		margin-left:0%;
+		margin-top:0%;
+	}
   }
   @media screen and (min-width: 481px) and (max-width: 768px) {
 	  .navlayer3 a:not(:first-child) {
@@ -688,11 +703,14 @@
 				width:100%;
 				float:left;
 			}
-			.wrapper1 .form-group input[type = submit]{
+	.wrapper1 .form-group input[type = submit]{
 				width:50%;
 				font-size:14px;
 				float:left;
 				margin-left:0%;
+			}
+	.wrapper_login{
+				width:100%
 			}
 	}
 	@media screen and (min-width: 769px) and (max-width: 1100px) {
