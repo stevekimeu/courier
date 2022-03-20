@@ -81,7 +81,6 @@ echo "<div class='error'>
 <link href = "../css/admin.css" type = "text/css" rel = "stylesheet" /> 
 
 <div class = "innercontainer">
-
 <div class = "wrapper2">	
 <form method="post" action="" name="reset"><br /><br/>
 <div class = "form-group">

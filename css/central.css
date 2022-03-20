@@ -11,6 +11,7 @@
   }
 .centered {
   padding-left:2%;
+  background-color: #9e296d;
   
   }
  .logo{
@@ -405,6 +406,9 @@ border-bottom: 1px solid #D3D3D3;
 	background-color:lightgreen;
 	padding-left:10%;
 	padding-right:10%;
+}
+.wrapper2 input[type = submit]{ 
+	width:100%;
 }
 
 .wrapper4{ 

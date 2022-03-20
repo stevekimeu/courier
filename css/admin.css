@@ -557,6 +557,20 @@
 	  display: block;
 	  text-align: left;
 	}
+	.navlayer6 .left{
+		display:none;
+	}
+	.tab {
+		width:25%;
+		display:inline;
+	}
+	.tab button {
+		font-size: 12px;
+	}
+	.tabcontent{
+		width:74%;
+		margin-left:0%;
+		}
 	.displayanimal{
 	  width:100%;
 	}
@@ -609,13 +623,14 @@
 		width:50%;
 		font-size:14px;
 		float:left;
-		margin-left:0%;
+		margin-left:25%;
 	}
 	.wrapper_login{
 		width:100%;
 		margin-left:0%;
 		margin-top:0%;
 	}
+
   }
   @media screen and (min-width: 481px) and (max-width: 768px) {
 	  .navlayer3 a:not(:first-child) {
@@ -640,21 +655,32 @@
 		text-align: left;
 	  }
 	  .navlayer4 .left{
-		display:none;
-		
+		display:none;		
 	}
-	  .displayanimal{
+	.navlayer6 .left{
+		display:none;
+	}
+	.tab {
+		width:25%;
+		display:inline;
+	}
+	.tab button {
+		font-size: 12px;
+	}
+	.tabcontent{
+		width:74%;
+		margin-left:0%;
+		}
+	.displayanimal{
 		  width:49%;
 	  }
-	  .displayanimal p{
+	.displayanimal p{
 		font-size:12px;	
 	}
-	.displayanimal h1{
-		
+	.displayanimal h1{		
 		font-size:10px;
 	}
-	.displayanimal h2{
-	
+	.displayanimal h2{	
 		font-size:10px;
 	}
 	.displayanimal h3{
@@ -678,28 +704,28 @@
 			  width:20%;
 			  font-size:10px;
 			  }
-			  .displayanimalpane table td{
+	.displayanimalpane table td{
 				font-size: 10px;
 			}
-			.wrapper_edit{
+	.wrapper_edit{
 				width:100%;		
 				margin-left:0%;
 			}
-			.wrapper_edit p{
+	.wrapper_edit p{
 				font-size: 14px;
 			}
-			.wrapper_edit td{
+	.wrapper_edit td{
 				width:100%;
 				float:left;
 			}
-			.wrapper1{
+	.wrapper1{
 				width:100%;		
 				margin-left:0%;
 			}
-			.wrapper1 p{
+	.wrapper1 p{
 				font-size: 14px;
 			}
-			.wrapper1 td{
+	.wrapper1 td{
 				width:100%;
 				float:left;
 			}
@@ -707,7 +733,7 @@
 				width:50%;
 				font-size:14px;
 				float:left;
-				margin-left:0%;
+				margin-left:25%;
 			}
 	.wrapper_login{
 				width:100%
@@ -734,6 +760,20 @@
 		  display: block;
 		  text-align: left;
 		}
+		.navlayer6 .left{
+			display:none;
+		}
+		.tab {
+			width:23%;
+			display:inline;
+		}
+		.tab button {
+			font-size: 12px;
+		}
+		.tabcontent{
+			width:74%;
+			margin-left:25.4%;
+			}
 		.displayanimal{
 			width:32%;
 		}
