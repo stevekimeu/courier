@@ -11,18 +11,23 @@ require_once('../admin/library.php');
 
 <link href = "../css/central.css" type = "text/css" rel = "stylesheet" /> 
 <link href = "../css/admin.css" type = "text/css" rel = "stylesheet" /> 
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://kit.fontawesome.com/4cb2645454.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
  <div class = "container">
 	<div class = "navlayer6">
 	<div class="left">
-	<a href = "https://www.facebook.com"> <img src="../images/fb.png" height="25" width="25">&nbsp;&nbsp;Facebook</a> 
-	<a href = "https://twitter.com"><img src="../images/tt.png" height="25" width="25">&nbsp;&nbsp;Twitter</a>  
-	<a href = "#"><img src="../images/instagram.jpg" height="25" width="25">&nbsp;&nbsp;Instagram</a> 
-	<a href = "#"><img src="../images/call.jpg" height="25" width="25">&nbsp;&nbsp;+254711648268/+254769903170</a> 
+	<a href = "https://www.facebook.com" class="fa fa-facebook icon-border facebook"></a> 
+	<a href = "https://twitter.com" class="fa fa-twitter icon-border twitter"></a>  
+	<a href = "#" class="fa fa-google-plus icon-border googleplus"></a> 
+	
 </div>
-	<div class="right">		
+	<div class="right">	
+		<a href="mailto:info@example.com" style="color:black;"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<u>admin@livestockmarkets.com</u></a>
+		<a href = "#" style="color:black; cursor:default;"><i class="fa fa-phone" aria-hidden="true" >&nbsp;&nbsp;0711648268</i></a> 	
 	    <a href="user_login.php">Login</a>
 		<a href="signup.php">Register</a>
 	  </div>

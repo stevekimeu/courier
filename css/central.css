@@ -29,9 +29,10 @@
 }
 .topnav {
   overflow: hidden;
-  background-color: white;
-  width:80%;
-  margin-left:20%;
+  background-color: #F5FFFA;
+  width:100%;
+  margin-left:0%;
+  border:1px solid #ddd;
 }
 .left{
 float:left;
@@ -40,20 +41,19 @@ float:left;
 float:right;
 }
 .topnav a {
+	background-color:#F5FFFA;
   float: left;
-  color: brown;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
+  border-radius: 5px;
+  margin-right:2px;
 }
-.topnav a:hover {
-  background-color: lightgreen;
-  color: black;
-}
-.topnav a.active {
-  background-color:   #ddd;
-  color: white;
+.topnav .left a:hover {
+  border-radius:20px;
+  color:green;
 }
 
 
@@ -65,24 +65,31 @@ color:black;
 background-color:#D3D3D3;
 }
 .searchnav input[type=text] {  
-  padding: 6px;
+  padding: 5px;
   margin-top: 8px;
   margin-right: 16px;
   font-size: 15px;
+  padding:1%;
   border-radius: 5px;
-  width:40%;
+  width:45%;
+  border:1px solid darkgrey;
+  background-color: #FFFAFA;
 }
+.searchnav input[type=text]:active {  
+	
+	border:1px solid darkgrey;
+  }
 .searchnav input[type=submit] {
   color:black;
   background-color:#D3D3D3;
   font-size: 16px;
-  padding:1.5%;
-  width:25%;
+  padding:1%;
+  width:18%;
   border:1px solid #2F4F4F;
   border-radius: 5px;
 }
 .searchnav input[type=submit]:hover {
-	width:26%;
+	width:19%;
   }
 .searchoutput{
 	color:black;
