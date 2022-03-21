@@ -63,7 +63,7 @@ if($sql->num_rows > 0){
 <table width = "100%">
 	<tr>
 		<td width ="100%" align = "center">	
-		  <a href="javascript:void(0);" class = "menu" onclick="myFunction()">MENU</a>
+		  <a href="#">MENU</a>
 		  <a href="shop_animals.php">Bid Livestock</a>
 		  <a href="sell_livestock.php">Add Livestock</a>		  
 		  <a href="myposting.php">Edit Livestock Details</a>

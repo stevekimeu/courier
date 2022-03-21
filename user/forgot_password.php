@@ -79,12 +79,12 @@ echo "<div class='error'>
 ?>
 <link href = "../css/central.css" type = "text/css" rel = "stylesheet" />
 <link href = "../css/admin.css" type = "text/css" rel = "stylesheet" /> 
-
+<link rel="icon" href="http://localhost/courier/images/log.png" type="image/icon type">
 <div class = "innercontainer">
 <div class = "wrapper2">	
 <form method="post" action="" name="reset"><br /><br/>
 <div class = "form-group">
-<label><strong>Enter Your Email Address:</strong></label><br /><br />
+<label><strong>Enter Your Account:</strong></label><br /><br />
 <input type="email" name="email" class = "form-control" required placeholder="username@email.com" />
 <br /><br /></div>
 <div class = "form-group">

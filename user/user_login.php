@@ -95,6 +95,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Login</title>
 	<link rel="icon" href="http://localhost/mulling_logo.jpg" type="image/icon type">
    <link href = "../css/central.css" type = "text/css" rel = "stylesheet" /> 
+   <link rel="icon" href="http://localhost/courier/images/log.png" type="image/icon type">
+   <link href = "../css/admin.css" type = "text/css" rel = "stylesheet" /> 
     <style>
         body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; }
