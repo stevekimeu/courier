@@ -191,6 +191,7 @@
 	display: inline-block;
     vertical-align:50%;
 	color:brown;
+
 }
 
 .fa-envelope{ 
@@ -565,12 +566,21 @@
 		display:inline;
 	}
 	.tab button {
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.tabcontent{
 		width:74%;
 		margin-left:0%;
 		}
+	.topnav a{
+		font-size:11px;
+		color:brown;
+		background-color: #ddd;
+		padding:5px;
+	}
+	.topnav{
+		font-size:11px;
+	}
 	.displayanimal{
 	  width:100%;
 	}
@@ -636,6 +646,9 @@
 	.menu {
 		font-weight: bold; 
 	  } 
+	  .navlayer6 .right i{
+		display:none;
+	}
 
   }
   @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -660,6 +673,10 @@
 		display: block;
 		text-align: left;
 	  }
+	  .topnav a{
+		font-size:12px;
+		padding-left:0%;
+	}
 	  .navlayer4 .left{
 		display:none;		
 	}
@@ -667,7 +684,7 @@
 		display:none;
 	}
 	.tab {
-		width:25%;
+		width:22%;
 		display:inline;
 	}
 	.tab button {
@@ -745,6 +762,9 @@
 				width:100%;
 				margin-left:0%;
 			}
+	.navlayer6 .right i{
+			display:none;
+		}
 	}
 	@media screen and (min-width: 769px) and (max-width: 1100px) {
 		.navlayer3 a:not(:first-child) {
@@ -767,11 +787,12 @@
 		  display: block;
 		  text-align: left;
 		}
+		
 		.navlayer6 .left{
 			display:none;
 		}
 		.tab {
-			width:23%;
+			width:20%;
 			display:inline;
 		}
 		.tab button {
@@ -779,8 +800,8 @@
 		}
 		.tabcontent{
 			width:74%;
-			margin-left:25.4%;
-			}
+			margin-left:0%;
+		}
 		.displayanimal{
 			width:32%;
 		}

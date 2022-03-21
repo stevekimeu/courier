@@ -41,7 +41,6 @@ float:left;
 float:right;
 }
 .topnav a {
-	background-color:#F5FFFA;
   float: left;
   color: black;
   text-align: center;
@@ -64,6 +63,7 @@ overflow:hidden;
 color:black;
 background-color:#D3D3D3;
 }
+
 .searchnav input[type=text] {  
   padding: 5px;
   margin-top: 8px;
