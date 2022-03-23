@@ -27,7 +27,7 @@ $result = dbQuery($sql);
 	?>
 		<tr onMouseOver="this.bgColor='#FAFAD2';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF">	      
 		   <td class="gentxt"><?php echo $data['category']; ?></td>
-		   <td class="gentxt"><?php echo $data['price']; ?></td>
+		   <td class="gentxt"><?php echo number_format($data['price'],2); ?></td>
 		   <td class="gentxt"><?php echo $data['bid']; ?></td>
 		   <td class="gentxt"><?php echo $data['comments']; ?></td>
 		   <td class="gentxt"><?php echo $data['order_date']; ?></td>

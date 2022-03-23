@@ -53,8 +53,11 @@ if($query->num_rows > 0){
 </div>
 
 		<?php }
-		}else{ ?>
-			<p>You have no Livestock on sale, Click on 'sell your Animal' to add a livestock</p>
+		}
+		else{ ?>
+		<div class = "childpane">
+			<p>You have no Livestock on sale, Click on 'sell your Livestock' to add a livestock</p>
+		</div>
 		<?php }
 		// Display status message
 

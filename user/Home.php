@@ -22,11 +22,11 @@ require_once('../admin/library.php');
 	<div class="left">
 	<a href = "https://www.facebook.com" class="fa fa-facebook icon-border facebook"></a> 
 	<a href = "https://twitter.com" class="fa fa-twitter icon-border twitter"></a>  
-	<a href = "#" class="fa fa-google-plus icon-border googleplus"></a> 
+	<a href="https://plus.google.com/u/0/"class="fa fa-google-plus icon-border googleplus"></a> 
 	
 </div>
 	<div class="right">	
-		<a href="mailto:info@example.com" ><i class="fa fa-envelope" aria-hidden="true" >&nbsp;&nbsp;<u  style="color:black;">admin@livestockmarkets.com</u></i></a>
+		<a href="mailto:info@example.com" ><i class="fa fa-envelope" aria-hidden="true" ></i>&nbsp;&nbsp;<u  style="color:black;">admin@livestockmarkets.com</u></a>
 		<a href = "#" style="color:black; cursor:default;"><i class="fa fa-phone" aria-hidden="true" >&nbsp;&nbsp;0711648268</i></a> 	
 	    <a href="user_login.php">Login</a>
 		<a href="signup.php">Register</a>
@@ -46,13 +46,9 @@ require_once('../admin/library.php');
 	
 	<div class="topnav">
 		<div class="left">
-		<a href="shop_animals.php">Bid Livestock</a>
-	  	<a href="sell_livestock.php">Add Livestock</a>
+		<a href="shop_animals.php">Buy Livestock</a>
+	  	<a href="sell_livestock.php">Sell your Livestock</a>
 	   	<a href="auctionresults.php">Auction Results</a>
-	  </div>
-	
-	<div class="right">	
-		<a href="contact_form.php">Contact Us</a>
 	  </div>
 	</div>
 	
@@ -103,6 +99,7 @@ require_once('../admin/library.php');
 	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Pets'"); ?>
 	<?php include ("display_home.php");?>
 </div>
+
 				<script>
 				function openCity(evt, cityName) {
 				  var i, tabcontent, tablinks;
@@ -120,8 +117,11 @@ require_once('../admin/library.php');
 				// Get the element with id="defaultOpen" and click on it
 				document.getElementById("defaultOpen").click();
 				</script>			
-				
+					
 			</div>
+			<?php
+include("contact_home.php");
+?>
 		</div>
 	  </div>
 	</body>

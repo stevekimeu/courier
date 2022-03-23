@@ -61,7 +61,7 @@ td {
 					<img src="<?php echo $imageURL; ?>" width ="auto" height = "225" alt = "No Picture"/>
 					<h2>&nbsp;<?php echo $data['category']; ?></h2>					
 			</td><td>
-					<h4 style = "color:brown;">Opening Bid: Kshs.&nbsp;<?php echo $data['price']; ?></h3>					
+					<h4 style = "color:brown;">Opening Bid: Kshs.&nbsp;<?php echo number_format($data['price'],2); ?></h3>					
 					<h4>Location:&nbsp;<?php echo $data['location']; ?></h4>	
 					
 					<p>Age:&nbsp;<?php echo $data['age']; ?>&nbsp;Months</p>
@@ -83,8 +83,6 @@ td {
 		<h4><b>NOTICE:</b><br>The highest becomes the buyer of a particular livestock and the buyer and the seller are expected to hold conversation over the provided medium. The winner of the bid pays transport cost. </h4>
 		
 	</div>
-
-	
 </div>
 	</body>
 </html>

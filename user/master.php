@@ -55,7 +55,6 @@ if($sql->num_rows > 0){
 	</div>
 	<div class="right">		
 		<a href="user_message.php">Notification</a>
-		<a href="contact_form.php">Contact Us</a>
 		<a href="logout.php">Logout</a>
 	  </div>
 	</div>
@@ -63,11 +62,10 @@ if($sql->num_rows > 0){
 <table width = "100%">
 	<tr>
 		<td width ="100%" align = "center">	
-		  <a href="#">MENU</a>
-		  <a href="shop_animals.php">Bid Livestock</a>
-		  <a href="sell_livestock.php">Add Livestock</a>		  
-		  <a href="myposting.php">Edit Livestock Details</a>
-		  <a href="bids.php">My Livestock Bidders</a>
+		  <a href="shop_animals.php">Buy Livestock</a>
+		  <a href="sell_livestock.php">Sell your Livestock</a>		  
+		  <a href="myposting.php">My Livestock on sale</a>
+		  <a href="bids.php">My Livestock Buyers</a>
 		  <a href="mybids.php">My Bids on Others</a>			  
 		  <a href="auctionresults.php">Results</a>
 		  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>			  

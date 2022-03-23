@@ -5,8 +5,7 @@
 	
 	<div class = "innercontainer">
   <div class = "wrapper1">			  
-<form action="sell_animal.php" method="post" enctype="multipart/form-data">
- 
+<form action="sell_animal.php" method="post" enctype="multipart/form-data"> 
 <fieldset>
 		<legend>Livestock Information Capture Form</legend> 
 	<table width = "100%">
