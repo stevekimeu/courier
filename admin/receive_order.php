@@ -33,15 +33,14 @@ $result = dbQuery($sql);
 			<form action="" method="post">
 			<table border="0" cellpadding="8" cellspacing="1" align="center">
 				<tbody>
-					<tr class="BoldRED" bgcolor="#FFFFFF" height = "20px">					  
-					  <td class="newtext" bgcolor="#EDEDED" width="5%">Livestock Number</td>
+					<tr class="BoldRED" bgcolor="#FFFFFF" height = "20px">	
 					  <td class="newtext" bgcolor="#EDEDED" width="10%">Category</td>
-					  <td class="newtext" bgcolor="#EDEDED" width="10%">Farmer Price</td>
-					  <td class="newtext" bgcolor="#EDEDED" width="10%">Bidder Price</td>
+					  <td class="newtext" bgcolor="#EDEDED" width="10%">Opening Bid</td>
+					  <td class="newtext" bgcolor="#EDEDED" width="10%">Bid Amount</td>
 					  <td class="newtext" bgcolor="#EDEDED" width="10%">Aution Date</td>
 					  <td class="newtext" bgcolor="#EDEDED" width="20%">Bidder Comments</td>					  
 					  <td class="newtext" bgcolor="#EDEDED" width="10%">Bid Placed On</td>
-					  <td class="newtext" bgcolor="#EDEDED" width="10%">Bidder Name</td>
+					  <td class="newtext" bgcolor="#EDEDED" width="10%">Bidder Email</td>
 					  <td class="newtext" bgcolor="#EDEDED" width="8%">Contact Bidder</td>
 					</tr>					
 							<?php					
@@ -49,7 +48,6 @@ $result = dbQuery($sql);
 							extract($data);	 
 							?>
 					  <tr onMouseOver="this.bgColor='lightgreen';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF">					  
-					  <td ><?php echo $data['cid']; ?></td>
 					  <td><?php echo $data['category']; ?></td>
 					  <td><?php echo $data['price']; ?></td>
 					  <td><?php echo $data['bid']; ?></td>

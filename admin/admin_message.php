@@ -68,8 +68,7 @@ extract($data);**/
 		<td>	
 		<div class="form-group">			
 				<label>Sender of Message </label>            
-					<input name="sender" id="sender" class = "form-control1" type="TEXT" required />
-					
+					<input name="sender" id="sender" class = "form-control1" type="TEXT" required />					
 		</div>
 		</td></tr>
 	<tr><td>

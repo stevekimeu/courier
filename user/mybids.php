@@ -5,8 +5,7 @@ require_once('../admin/library.php');
 
 $sql = "SELECT * FROM tbl_order WHERE username = '$username'";
 
-$result = dbQuery($sql);	
-
+$result = dbQuery($sql);
 ?>
 <div class = "innercontainer">
 <div class = "displayanimalpane">	
