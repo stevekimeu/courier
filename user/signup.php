@@ -62,7 +62,7 @@ if(strlen($email)>50){  // Max
    if (mysqli_num_rows($res) > 0) {
 $row = mysqli_fetch_assoc($res);
 
-     if($username==$row['phonenumber'])
+     if($phonenumber==$row['phonenumber'])
      {
            $error[] ='Phone Number alredy Exists.';
           } 

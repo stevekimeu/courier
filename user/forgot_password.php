@@ -46,7 +46,7 @@ $output.='<p>If you did not request this forgotten password email, no action
 is needed, your password will not be reset. However, you may want to log into 
 your account and change your security password as someone may have guessed it.</p>';   	
 $output.='<p>Thanks,</p>';
-$output.='<p>LivestockMarkets Team</p>';
+$output.='<p>Livestock Markets Team</p>';
 $body = $output; 
 $subject = "Password Recovery - Online Markets";
 
@@ -58,17 +58,17 @@ $mail->IsSMTP();
 $mail->Host = "smtp.gmail.com"; // Enter your host here
 $mail->SMTPAuth = true;
 $mail->Username = "stevekimeu@gmail.com"; // Enter your email here
-$mail->Password = "_89Kimeu"; //Enter your password here
+$mail->Password = "stephenmusyoka@89"; //Enter your password here
 $mail->Port = 587;
 $mail->IsHTML(true);
-$mail->From = "stevekimeu@gmail";
+$mail->From = "stevekimeu@gmail.com";
 $mail->FromName = "Online Markets";
 $mail->Sender = $fromserver; // indicates ReturnPath header
 $mail->Subject = $subject;
 $mail->Body = $body;
 $mail->AddAddress($email_to);
 if(!$mail->Send()){
-echo "Mailer Error: " . $mail->ErrorInfo;
+echo "Message could not be sent. Mailer Error: " . $mail->ErrorInfo;
 }else{
 echo "<div class='error'>
 <p>An email has been sent to you with instructions on how to reset your password.</p>
@@ -84,7 +84,7 @@ echo "<div class='error'>
 <div class = "wrapper2">	
 <form method="post" action="" name="reset"><br /><br/>
 <div class = "form-group">
-<label><strong>Enter Your Account:</strong></label><br /><br />
+<label><strong>Enter Your Email Address:</strong></label><br /><br />
 <input type="email" name="email" class = "form-control" required placeholder="username@email.com" />
 <br /><br /></div>
 <div class = "form-group">
