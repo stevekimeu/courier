@@ -46,7 +46,7 @@ $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 			VALUES('$Category', '$Age','$Weight', '$Location', '$Purebred','$AuctionDate','$Breed', '$fileName','$Price','$PaymentMethod',NOW(),'$username')";	
 	if (mysqli_query($dbConn, $sql)) {
 				
-				header("location: master.php"); // redirects to master page
+				header("location: sell_livestock.php"); // redirects to master page
 		}
 		 else {
 		  echo "Error: " . $sql . "<br>" . mysqli_error($dbConn);
