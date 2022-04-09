@@ -8,7 +8,7 @@
 <div class = "majorlayer">
 	<table>
 		<td>	
-			<a href = "admin.php"> <img src="../images/mulling_logo1.png" height="70" width="900">
+			<a href = "admin.php"> <img src="../images/logos.png" height="60" width="400">
 		</td>
 			
 	</table>

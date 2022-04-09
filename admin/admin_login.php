@@ -4,7 +4,7 @@ require_once('database.php');
 require_once('library.php');
 $error = "";
 if(isset($_POST['txtusername'])){
-	$error = checkUser($_POST['txtusername'],$_POST['txtpassword'],$_POST['OfficeName']);
+	$error = checkUser($_POST['txtusername'],$_POST['txtpassword']);
 }//if
 
 require_once('database.php');
@@ -48,10 +48,8 @@ function memloginvalidate()
       <tbody><tr>
         <td>
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-.style2 {color: #FFFFFF}
--->
+
+
 </style>
 <table border="0" cellpadding="0" cellspacing="0" width="782">
 <tbody><tr>
