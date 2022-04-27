@@ -26,7 +26,7 @@ require_once('../admin/library.php');
 	
 </div>
 	<div class="right">	
-		<a href="mailto:info@example.com" ><i class="fa fa-envelope" aria-hidden="true" ></i>&nbsp;&nbsp;<u  style="color:black;">admin@livestockmarkets.com</u></a>
+		<a href="mailto:info@example.com" ><i class="fa fa-envelope" aria-hidden="true" ></i>&nbsp;&nbsp;<u>admin@livestockmarkets.com</u></a>
 		<a href = "#" style="color:black; cursor:default;"><i class="fa fa-phone" aria-hidden="true" >&nbsp;&nbsp;0711648268</i></a> 	
 	    <a href="user_login.php">Login</a>
 		<a href="signup.php">Register</a>

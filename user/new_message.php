@@ -11,7 +11,7 @@ if(!isset($_POST['submit'])){
 			VALUES('$name', '$email','$phone', '$message')";	
 	if (mysqli_query($dbConn, $sql)) {
 				
-				header("location: Home.php#contact-group1_home"); // redirects to main page
+				header("location: Home.php"); // redirects to main page
 		}
 		 else {
 		  echo "Error: " . $sql . "<br>" . mysqli_error($dbConn);

@@ -163,7 +163,7 @@
 /* social media css */
 .navlayer6{
 	overflow: hidden;
-	background-color: #DCDCDC;
+	background-color: #be9e67;
 	width:100%;
 	/* border-bottom:1px solid lightgreen; */
 }
@@ -173,12 +173,10 @@
 	text-align: center;
     padding: 14px 16px;
     font-size: 16px;
-	color:black;
+	color:white;
 	line-height: 100%;		
-	display: inline-block;
-   
+	display: inline-block;   
 }
-
 .navlayer6 a:hover{
 	color:black;
     font-size: 16px;
@@ -186,12 +184,19 @@
 .navlayer6 img{
 	display: inline-block;
     vertical-align:-50%;
+	font-size: 25px;
 }
 .navlayer6 .right a{
 	display: inline-block;
     vertical-align:50%;
-	color:brown;
+	color:yellow;
 
+}
+.navlayer6 i{
+	color:white;
+}
+.navlayer6 .right u{
+	color:white;
 }
 
 .fa-envelope{ 
