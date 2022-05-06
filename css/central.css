@@ -143,7 +143,7 @@ body {font-family: "Lato", sans-serif;}
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 16px;
   margin-top:5%;
   border:none;
 }
@@ -603,7 +603,7 @@ border-bottom: 1px solid #D3D3D3;
 
 .innercontainer{
 		width:100%;
-		background-image: url('../images/steve7.jpg');
+		background-image: url('../images/steve11.jpg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
@@ -750,6 +750,7 @@ border-bottom: 1px solid #D3D3D3;
 	display: inline-block;
 	margin-right:10%;
 	line-height: 200%;
+	margin-top:6.5%;
 }
 .footercontainer{
 	width:100%;
@@ -770,12 +771,14 @@ border-bottom: 1px solid #D3D3D3;
 	border:1px solid #AEB6BF ;
 	border-radius:5px;
 	margin-left: 1%;
+	
 }
 .relatedlinks a{
 	text-decoration: none;
 	display: inline-block;
 	margin-right:10%;
 	line-height: 200%;
+	margin-bottom:9%;
 }
 
 .footercontainer_home{

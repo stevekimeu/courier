@@ -56,12 +56,12 @@ require_once('../admin/library.php');
 	<div class="tab">
 	  <button class="tablinks" onclick="openCity(event, 'DairyLivestock')" id="defaultOpen" >Dairy Cattle</button>
 	  <button class="tablinks" onclick="openCity(event, 'BeefLivestock')">Beef Cattle</button>
-	  <button class="tablinks" onclick="openCity(event, 'Goats')" >Goats</button>	  
+	  <button class="tablinks" onclick="openCity(event, 'Goat')" >Goats</button>	  
 	  <button class="tablinks" onclick="openCity(event, 'Sheep')">Sheep</button>
-	  <button class="tablinks" onclick="openCity(event, 'Donkeys')">Donkeys</button>
-	  <button class="tablinks" onclick="openCity(event, 'Carmels')">Carmels</button>
+	  <button class="tablinks" onclick="openCity(event, 'Donkey')">Donkeys</button>
+	  <button class="tablinks" onclick="openCity(event, 'Carmel')">Carmels</button>
 	  <button class="tablinks" onclick="openCity(event, 'Swine')">Swine</button>
-	  <button class="tablinks" onclick="openCity(event, 'Pets')">Pets</button>
+	  <button class="tablinks" onclick="openCity(event, 'Pet')">Pets</button>
 	</div>
 
 
@@ -75,28 +75,28 @@ require_once('../admin/library.php');
 	<?php include ("display_home.php");?>
 </div>
 
-<div id="Goats" class="tabcontent">
-	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Goats'"); ?>
+<div id="Goat" class="tabcontent">
+	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Goat'"); ?>
 	<?php include ("display_home.php");?>
 </div>
 <div id="Sheep" class="tabcontent">
 	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Sheep'"); ?>
 	<?php include ("display_home.php");?>
 </div>
-<div id="Donkeys" class="tabcontent">
-	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Donkeys'"); ?>
+<div id="Donkey" class="tabcontent">
+	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Donkey'"); ?>
 	<?php include ("display_home.php");?>
 </div>
-<div id="Carmels" class="tabcontent">
-	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Carmels'"); ?>
+<div id="Carmel" class="tabcontent">
+	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Carmel'"); ?>
 	<?php include ("display_home.php");?>
 </div>
 <div id="Swine" class="tabcontent">
 	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Swine'"); ?>
 	<?php include ("display_home.php");?> 
 </div>
-<div id="Pets" class="tabcontent">
-	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Pets'"); ?>
+<div id="Pet" class="tabcontent">
+	<?php $query = $dbConn->query("SELECT * FROM tbl_courier WHERE category = 'Pet'"); ?>
 	<?php include ("display_home.php");?>
 </div>
 

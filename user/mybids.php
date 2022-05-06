@@ -12,10 +12,10 @@ $result = dbQuery($sql);
    <p>My Bids</p>  
   <table cellpadding="10" cellspacing="2" width = "100%" >
     <tr bgcolor="#FFFFFF" style="height:20px;" >  
-		  <td style="font-weight:bold">Category</td>
+		  <td style="font-weight:bold">Livestock</td>
 		  <td style="font-weight:bold">Opening Bid</td>
-		  <td style="font-weight:bold">My Quotation</td>
-		  <td style="font-weight:bold">My Comments</td>
+		  <td style="font-weight:bold">My Price</td>
+		  <td style="font-weight:bold">Comments</td>
 		  <td style="font-weight:bold">Bid Date</td>
     </tr>
 	<?php
@@ -26,8 +26,8 @@ $result = dbQuery($sql);
 	?>
 		<tr onMouseOver="this.bgColor='#FAFAD2';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF">	      
 		   <td class="gentxt"><?php echo $data['category']; ?></td>
-		   <td class="gentxt"><?php echo number_format($data['price'],2); ?></td>
-		   <td class="gentxt"><?php echo $data['bid']; ?></td>
+		   <td class="gentxt"><?php echo number_format($data['price']); ?></td>
+		   <td class="gentxt"><?php echo number_format($data['bid']); ?></td>
 		   <td class="gentxt"><?php echo $data['comments']; ?></td>
 		   <td class="gentxt"><?php echo $data['order_date']; ?></td>
 		   <td><a href = "edit_bid.php?cid=<?php echo $data['id']; ?>">Edit Bid</a></td>

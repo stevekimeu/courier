@@ -13,41 +13,41 @@
 		<tr>
 			<td>
 			<div class="form-group">
-						<label>Type of Animal:</label> <br>
+						<label>Type of Livestock:</label> <br>
 							<select id="Category" name="Category" maxlength="100" class = "form-control1" >
 								<option value="Dairy Cattle" >Dairy Cattle</option>
 								<option value="Beef Cattle">Beef Cattle</option>
-								<option value="Goats" selected="selected">Goat</option>
+								<option value="Goat" selected="selected">Goat</option>
 								<option value="Sheep">Sheep</option>
-								<option value="Donkeys">Donkey</option>
-								<option value="Carmels">Carmel</option>
+								<option value="Donkey">Donkey</option>
+								<option value="Carmel">Carmel</option>
 								<option value="Swine">Swine</option>
-								<option value="Pets">Pets</option>
+								<option value="Pet">Pets</option>
 							</select>
 			</div>
 			</td><td>
 			<div class="form-group">				
 				<label>Crossbred/Purebred:</label> <br>
 				<select id="Purebred" name="Purebred" class = "form-control1">
-				<option value="Crossbred" selected="selected">Crossbred</option>
-				<option value="Purebred">Purebred</option>
+				<option value="Crossbred" selected="selected">Cross-breed</option>
+				<option value="Purebred">Pure-breed</option>
 				</select>
 			</div>
 			</td></tr>
 			<tr><td>
 			<div class="form-group">
-				 <label>Age of the Animal :</label><br>
-				<input name="Age" id="Age"type="TEXT" class = "form-control1">&nbsp;Months
+				 <label>Age of Livestock :</label><br>
+				<input name="Age" id="Age"type="number" class = "form-control1">&nbsp;Months
 			</div>	
 			</td><td>
 			<div class="form-group">
-				<label>Animal Approx Weight:</label><br> 						 
-				 <input name="Weight" id="Weight"  type="TEXT" class = "form-control1">&nbsp;Kgs
+				<label>Livestock Approx Weight:</label><br> 						 
+				 <input name="Weight" id="Weight"  type="number" class = "form-control1">&nbsp;Kgs
 			</div>
 			</td></tr>
 			<tr><td>
 			<div class="form-group">				
-				<label>Animal Breed:</label> <br>  
+				<label>Livestock Breed:</label> <br>  
 							<input list="Breed" name="Breed" class = "form-control1" required> 
 							  <datalist id="Breed">
 									<option value = "Sheep">
@@ -158,12 +158,15 @@
 									<option value = "TexMaster">
 									<option value = "Angora">
 									<option value = "Cashmere">
-									<option value = "Pygora">					 
+									<option value = "Pygora">	
+									<option value = "Cat">	
+									<option value = "Puppy">
+									<option value = "Dog">			 
 								</datalist>
 			</div>
 			</td><td>
 			<div class="form-group">
-				<label>Animal Location</label> <br>    
+				<label>Livestock Location</label> <br>    
 							<input list="Location" name="Location" class = "form-control1">
 							  <datalist id="Location">
 									  <option value="Mombasa County, Kenya">
@@ -213,6 +216,7 @@
 									  <option value="Kisii County, Kenya">
 									  <option value="Nyamira County, Kenya">
 									  <option value="Nairobi County, Kenya">
+									  <option value="Other">
 								</datalist>
 			</div>
 			</td></tr>
@@ -224,17 +228,14 @@
 			</td><td>
 			<div class="form-group">
 				<label>Farmer Quoted Price in Kshs.:</label><br>	
-				<input name="Price" id="Price" type="TEXT" class = "form-control1">
+				<input name="Price" id="Price" type="number" class = "form-control1">
 			</div>
 			</tr></td>
 			<tr><td>
 			<div class="form-group">
-			 <label>Specify Method of Payment:</label><br>					 
+			 <label>Mode of Payment:</label><br>					 
 			 <select name="PaymentMethod" id="PaymentMethod" class = "form-control1">
-					<option selected="selected" value="Cash">Cash</option>
-					<option value="Bank">Bank</option>
-					<option value="Mpesa">M-pesa</option>					
-					<option value="Any">Any Other</option>
+					<option selected="selected" value="M-Pesa">M-Pesa</option>
 				</select>
 			</div>
 			</td><td>

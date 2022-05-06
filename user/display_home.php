@@ -10,6 +10,7 @@ if($query->num_rows > 0){
 		$auction = $row["auction_date"];
 		$posted = $row["Created_On"];
 		$cid = $row["cid"];
+		$Description = $row['description'];
 		
 		
 		date_default_timezone_set("Africa/Nairobi");
@@ -25,10 +26,9 @@ if($query->num_rows > 0){
 					<img src="<?php echo $imageURL; ?>" width ="80%" height = "192" alt = "No Picture"/>
 					<h3>Opening Bid: Kshs.&nbsp;<?php echo number_format($price,2); ?></h3>					
 					<h4>&nbsp;<?php echo $location; ?></h4>	
-					<p>&nbsp;<?php echo $category; ?></p>
-					<p>Posted On:&nbsp;<?php echo $posted; ?></p>
-					<p>Bidding Closes On:&nbsp;<?php echo $auction; ?></p>					
-					<h4><?php echo $diff->format("%R%a days");?> Remaining</h4>					
+					<p>&nbsp;<?php echo $category.", ".$Description ; ?></p>
+					<p>Posted On:&nbsp;<?php echo $posted; ?></p>					
+					<h4>Bidding to close in:<?php echo $diff->format("%R%a days");?> <?php echo ", On ".$auction;?></h4>					
 					<p>Age:&nbsp;<?php echo $age; ?>&nbsp;Months</p>
 					<p>Weight:&nbsp;<?php echo $weight; ?>&nbsp;Kgs</p>
 					<div class = "displayanimal_tab">			
@@ -42,7 +42,7 @@ if($query->num_rows > 0){
 <?php }
 }
 
-else{ ?>
+else{  ?>
     <p>Livestock of that Category not found...</p>
 <?php }
 // Display status message

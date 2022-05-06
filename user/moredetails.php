@@ -59,16 +59,15 @@ td {
 				<tr>
 					<td>
 					<img src="<?php echo $imageURL; ?>" width ="auto" height = "225" alt = "No Picture"/>
-					<h2>&nbsp;<?php echo $data['category']; ?></h2>					
+					<h2>&nbsp;<?php echo $data['category'].", ".$data['description'] ; ?></h2>					
 			</td><td>
 					<h4 style = "color:brown;">Opening Bid: Kshs.&nbsp;<?php echo number_format($data['price'],2); ?></h3>					
 					<h4>Location:&nbsp;<?php echo $data['location']; ?></h4>	
 					
 					<p>Age:&nbsp;<?php echo $data['age']; ?>&nbsp;Months</p>
 					<p>Weight:&nbsp;<?php echo $data['weight']; ?>&nbsp;Kgs</p>
-					<p>Posted On:&nbsp;<?php echo $data['Created_On']; ?></p>
-					<p>Bidding Closes:&nbsp;<?php echo $auction; ?></p>					
-					<h5 style = "color:red;">Bidding to close in &nbsp;<?php echo $diff->format("%R%a days");?> </h5>
+					<p>Posted On:&nbsp;<?php echo $data['Created_On']; ?></p>				
+					<h5 style = "color:red;">Bidding to close in &nbsp;<?php echo $diff->format("%R%a days").", On ".$auction;?> </h5>
 				</td><td><br><br><br><br><br><br>
 				<div class = "displayanimal2_tab">
 					<a href = "dealer.php?cid=<?php echo $cid; ?>">Contact Dealer For more information </a> 

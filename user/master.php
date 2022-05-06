@@ -51,7 +51,6 @@ if($sql->num_rows > 0){
 	<div class="navlayer4">
 	<div class = "left">
 	<i>Logged in as:&nbsp;<?php echo $loggedin;} }?></i>
-	
 	</div>
 	<div class="right">		
 		<a href="user_message.php">Notification</a>

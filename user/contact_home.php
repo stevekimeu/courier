@@ -13,9 +13,9 @@
 
 <h2 align = "center">Related Links</h2><hr>
 <ul style="list-style-type:square">
-<li><a href = "https://www.livestockmarket.com">United States Online Livestock Markets</a></li>
-<li><a href = "https://vikaspedia.in/agriculture/livestock/general-management-practices-of-livestock/animal-breeding">Livestock Breeding</a></li>
-<li><a href = "https://www.agriorbit.com/the-sa-cattle-and-sheep-market-part-5-weaner-price-trends/">South Africa Online Livestock Markets</a></li>
+<li><a href = "https://www.livestockmarket.com" target = "_blank">United States Online Livestock Markets</a></li>
+<li><a href = "https://vikaspedia.in/agriculture/livestock/general-management-practices-of-livestock/animal-breeding"target = "_blank">Livestock Breeding</a></li>
+<li><a href = "https://www.agriorbit.com/the-sa-cattle-and-sheep-market-part-5-weaner-price-trends/"target = "_blank">South Africa Online Livestock Markets</a></li>
 </ul>
 </div>	
 <div class = "contact-group1_home">
@@ -40,11 +40,11 @@
 	</div>
 	<div class = "footer_home">
 	<h2 align = "center">Connect with Us</h2><hr>
-		<a href = "https://www.facebook.com" class="fa fa-facebook icon-border facebook"></a> 
-		<a href = "https://twitter.com" class="fa fa-twitter icon-border twitter"></a>  
-		<a href="https://plus.google.com/u/0/" class="fa fa-google-plus icon-border googleplus"></a> 
-		<a href="mailto:info@example.com" ><i class="fa fa-envelope" aria-hidden="true" ></i>&nbsp;&nbsp;<u  style="color:black;">admin@livestockmarkets.com</u></a>
-		<a href = "#" style="color:black; cursor:default;"><i class="fa fa-phone" aria-hidden="true" >&nbsp;&nbsp;0711648268</i></a> 	
+		<a href = "https://www.facebook.com" class="fa fa-facebook icon-border facebook" target = "_blank"></a> 
+		<a href = "https://twitter.com" class="fa fa-twitter icon-border twitter" target = "_blank"></a>  
+		<a href="https://plus.google.com/u/0/" class="fa fa-google-plus icon-border googleplus"target = "_blank"></a> 
+		<a href="mailto:info@example.com" ><i class="fa fa-envelope" aria-hidden="true" ></i>&nbsp;&nbsp;admin@livestockmarkets.com</a>
+		<a href = "#" style="color:black; cursor:default;"><i class="fa fa-phone" aria-hidden="true" >&nbsp;&nbsp;+254711648268</i></a> 	
 	</div>
     <div class = "trademark">
    <p> © 2022 Livestock Markets Kenya. All Rights Reserved | Design by STEVEN</p>

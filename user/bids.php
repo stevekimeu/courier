@@ -10,13 +10,13 @@ $result = dbQuery($sql);
 ?>
 <div class = "innercontainer">
 <div class = "displayanimalpane">	
-   <p>My Livestock Bidders</p>  
+   <p>My Livestock Buyers</p>  
   <table cellpadding="10" cellspacing="2" width = "100%" >
     <tr bgcolor="#FFFFFF" style="height:20px;" >  
 		  <td style="font-weight:bold">Category</td>
 		  <td style="font-weight:bold">Opening Bid</td>
-		  <td style="font-weight:bold">Bidder Quotation</td>
-		  <td style="font-weight:bold">Bidder Comments</td>
+		  <td style="font-weight:bold">Buyer Price</td>
+		  <td style="font-weight:bold">Buyer Comments</td>
 		  <td style="font-weight:bold">Bid Date</td>
     </tr>
 	<?php
@@ -27,11 +27,11 @@ $result = dbQuery($sql);
 	?>
 		<tr onMouseOver="this.bgColor='#FAFAD2';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF">	      
 		   <td class="gentxt"><?php echo $data['category']; ?></td>
-		   <td class="gentxt"><?php echo number_format($data['price'],2); ?></td>
-		   <td class="gentxt"><?php echo number_format($data['bid'],2); ?></td>
+		   <td class="gentxt"><?php echo number_format($data['price']); ?></td>
+		   <td class="gentxt"><?php echo number_format($data['bid']); ?></td>
 		   <td class="gentxt"><?php echo $data['comments']; ?></td>
 		   <td class="gentxt"><?php echo $data['order_date']; ?></td>
-		   <td><a href = "buyer.php?cid=<?php echo $data['id']; ?>">Contact Dealer</a></td>
+		   <td><a href = "buyer.php?cid=<?php echo $data['id']; ?>">Contact Buyer</a></td>
 		</tr>
     <?php
 	}//while

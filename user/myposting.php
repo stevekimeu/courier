@@ -39,13 +39,11 @@ if($query->num_rows > 0){
 					<p>Posted On:&nbsp;<?php echo $posted; ?></p>
 					<p>Date of Auction:&nbsp;<?php echo $auction; ?></p>
 					<h3><?php echo $diff->format("%R%a days");?> Remaining</h3>	
-					<a href = "delete_post.php?cid=<?php echo $cid; ?>"><h3>Delete Post</h3></a>
+					<a href = "delete_post.php?cid=<?php echo $cid;?>"><h3>Delete Post</h3></a>
 	<div class = "displayanimal_tab">
 			<a href = "edit.php?cid=<?php echo $cid; ?>">Edit your Post</a>
 		</div>
-	
-							
-					
+			
 			</td>
 		</tr>
 	</table>	

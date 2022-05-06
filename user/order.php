@@ -44,7 +44,7 @@ td {
 				if(isset($_POST['submit']))
 				{
 					$Category = $_REQUEST['Category'];
-					$Number = $_REQUEST['Number'];
+					$Sex = $_REQUEST['Sex'];
 					$Date	=$_POST['Date'];
 					$Price	=$_POST['Price'];
 					$Bid =$_POST['bid'];
@@ -53,7 +53,7 @@ td {
 					$dealer = $data['postedby'];
 					
 					$insert = mysqli_query($dbConn, "INSERT INTO tbl_order (cid, category, auction, price, bid, comments, username,dealer) 
-							VALUES( '$Number', '$Category', '$Date', '$Price', '$Bid', '$Comments', '$username','$dealer')");
+							VALUES( '$Sex', '$Category', '$Date', '$Price', '$Bid', '$Comments', '$username','$dealer')");
 
 				   if($insert)
 					{
@@ -79,14 +79,14 @@ td {
 		</div>	
 		</td><td >
 			<div class="form-group">			
-					<label>Animal Number: </label> <br>           
-						<input name="Number" id="Number" class = "form-control1" type="TEXT" readonly value="<?php echo $data['cid'];?>" />			
+					<label>Pure/Crossbred?: </label> <br>           
+						<input name="Sex" id="Sex" class = "form-control1" type="TEXT" readonly value="<?php echo $data['sex'];?>" />			
 			</div>
 		</td></tr>
 		<tr><td>
 		  <div class="form-group">
-					<label>Farmer Quoted Price: </label><br><br>	
-					<input name="Price" id="Price" class = "form-control1" type="TEXT"  readonly value="<?php echo $data['price'];?>" />
+					<label>Farmer Price: </label><br><br>	
+					<input name="Price" id="Price" class = "form-control1" type="number"  readonly value="<?php echo number_format($data['price']);?>" />
 		</div>
 		</td><td>
 		<div class="form-group">
@@ -97,7 +97,7 @@ td {
 		<tr><td>		
 			<div class="form-group">
 					<label>Quote your Price</label><br><br>
-					<input type="TEXT" class = "form-control1" name="bid" required>
+					<input type="number" class = "form-control1" name="bid" required>
 			</div>
 				</td><td>
 			<div class="form-group">
