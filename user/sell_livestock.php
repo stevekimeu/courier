@@ -252,4 +252,8 @@
 </table>
 </form>
 </div>
+
+<div class = "trademark">
+   <p> © 2022 Livestock Markets Kenya. All Rights Reserved | Design by STEVEN</p>
+</div>
 </div>

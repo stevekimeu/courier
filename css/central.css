@@ -67,6 +67,7 @@ float:right;
 overflow:hidden;
 color:black;
 background-color:#f8f5f0;
+border-top:5px solid #be9e67;
 }
 
 .searchnav input[type=text] {  
@@ -126,16 +127,17 @@ body {font-family: "Lato", sans-serif;}
 /* Style the tab */
 .tab {
   float: left;
-  background-color: #C8AD7F;
+  background-color: #FAFAD2;
   width: 15%;
   min-height: 100%;
   padding-bottom:1%;
+  border-right:1px solid lightblue;
   }
 
 /* Style the buttons inside the tab */
 .tab button {
   display: block;
-  background-color: #C8AD7F;
+  background-color: #FAFAD2;
   color: black;
   padding: 14px 16px;
   width: 100%;
@@ -157,7 +159,7 @@ body {font-family: "Lato", sans-serif;}
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color:  #FAFAD2;
+  background-color:  white;
   color:brown;
   font-weight: bold;
   font-size: 15px;
@@ -803,5 +805,6 @@ border-bottom: 1px solid #D3D3D3;
 	background-attachment: fixed;
 	background-size: cover;
 	overflow:auto;
+	margin-bottom: 1%;
 }
 

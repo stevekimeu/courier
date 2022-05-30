@@ -86,7 +86,7 @@ td {
 		<tr><td>
 		  <div class="form-group">
 					<label>Farmer Price: </label><br><br>	
-					<input name="Price" id="Price" class = "form-control1" type="number"  readonly value="<?php echo number_format($data['price']);?>" />
+					<input name="Price" id="Price" type = "number" class = "form-control1"  readonly value="<?php echo $data['price'];?>" />
 		</div>
 		</td><td>
 		<div class="form-group">

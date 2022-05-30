@@ -45,5 +45,7 @@ if($query->num_rows > 0){
 }else{ ?>
     <p>Livestock of such Category not found...</p>
 <?php }
-
 ?>
+<div class = "trademark">
+   <p> © 2022 Livestock Markets Kenya. All Rights Reserved | Design by STEVEN</p>
+</div>

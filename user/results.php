@@ -21,8 +21,7 @@ if($days<0){
 	$Bid = $data['bid'];
 	$Auction = $data['auction_date'];
 	$Picture = $data['picture'];
-	
+
 	$insert = "INSERT INTO tbl_results values(category,bid, auction,picture '$Category', '$Bid', '$Auction','$Picture')";	
 	}	
 }
-?>

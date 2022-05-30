@@ -1,9 +1,6 @@
 <?php 
 include("master.php");
 include("results.php");
-	
-require_once('../admin/database.php');
-require_once('../admin/library.php');
 $cid = '';
 $query = $dbConn->query("SELECT * FROM tbl_results ORDER BY category");
 if($query->num_rows > 0){
