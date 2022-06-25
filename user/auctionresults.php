@@ -18,7 +18,7 @@ if($query->num_rows > 0){
 			<td align = "center" color = "green">
 					<img src="<?php echo $imageURL; ?>" width ="100%" height = "240" alt = "No Picture"/>
 					<h3>&nbsp;<?php echo $Category; ?></h3>
-					<h1>Sold at: &nbspKsh.&nbsp;<?php echo $Sold; ?></h1>									
+					<h1>Sold at: &nbsp;Ksh.&nbsp;<?php echo $Sold; ?></h1>									
 					<p>Auction Closed On:&nbsp;<?php echo $auction; ?></p>	
 			</td>
 		</tr>

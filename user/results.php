@@ -18,7 +18,7 @@ while($data = mysqli_fetch_array($result)){
 				
 if($days<0){		
 	$Category = $data['category'];
-	$Bid = $data['bid'];
+	$Bid = $data['price'];
 	$Auction = $data['auction_date'];
 	$Picture = $data['picture'];
 

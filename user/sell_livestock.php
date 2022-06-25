@@ -36,13 +36,13 @@
 			</td></tr>
 			<tr><td>
 			<div class="form-group">
-				 <label>Age of Livestock :</label><br>
-				<input name="Age" id="Age"type="number" class = "form-control1">&nbsp;Months
+				 <label>Livestock Age Bracket :</label><br>
+				<input name="Age" id="Age"type="Text" class = "form-control1" placeholder="30 - 40 Months">&nbsp;Months
 			</div>	
 			</td><td>
 			<div class="form-group">
-				<label>Livestock Approx Weight:</label><br> 						 
-				 <input name="Weight" id="Weight"  type="number" class = "form-control1">&nbsp;Kgs
+				<label>Livestock Weight:</label><br> 						 
+				 <input name="Weight" id="Weight"  type="Text" class = "form-control1" placeholder="200 - 300 Kgs">&nbsp;Kgs
 			</div>
 			</td></tr>
 			<tr><td>
@@ -241,6 +241,7 @@
 			</td><td>
 	<div class="form-group">
     	<input type="file" name="file">
+
 	</div>
 	</td></tr>
 	<tr width = "100%"><td colspan = "2">
