@@ -43,7 +43,7 @@ if($query->num_rows > 0){
 
 <?php }
 }else{ ?>
-    <p>Livestock of such Category not found...</p>
+    <p><?php echo $category; ?> not found...</p>
 <?php }
 ?>
 <div class = "trademark">

@@ -18,7 +18,6 @@ if($query->num_rows > 0){
 		$date2=date_create(date("y-m-d"));
 		$diff=date_diff($date2,$date1);
 ?>
-
 <div class = "displayanimal">		
 	<table >
 		<tr>
@@ -32,7 +31,7 @@ if($query->num_rows > 0){
 					<p>Age:&nbsp;<?php echo $age; ?>&nbsp;Months</p>
 					<p>Weight:&nbsp;<?php echo $weight; ?>&nbsp;Kgs</p>
 					<div class = "displayanimal_tab">			
-						<a href = "order.php?cid=<?php echo $cid; ?>">Place your bid </a>
+					<a href = "order.php?cid=<?php echo $cid; ?>">Place your bid </a>
 					</div> 
 								
 			</td>
@@ -43,7 +42,7 @@ if($query->num_rows > 0){
 }
 
 else{  ?>
-    <p>Livestock of that Category not found...</p>
+    <p>Livestock not found...</p>
 <?php }
 // Display status message
 

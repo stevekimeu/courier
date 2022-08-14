@@ -47,7 +47,7 @@
 		<a href = "#" style="color:black; cursor:default;"><i class="fa fa-phone" aria-hidden="true" >&nbsp;&nbsp;+254711648268</i></a> 	
 	</div>
     <div class = "trademark">
-   <p> © 2022 Livestock Markets Kenya. All Rights Reserved | Design by STEVEN</p>
+   <p> © 2022 Livestock Markets Kenya. All Rights Reserved | Design @<i>LivestockMarkets</i></p>
 
     </div>
 	</div>

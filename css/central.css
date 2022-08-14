@@ -66,7 +66,7 @@ float:right;
 /* border-bottom:1px solid lightblue; */
 overflow:hidden;
 color:black;
-background-color:#f8f5f0;
+background-color:#E6E6FA;
 border-top:5px solid #be9e67;
 }
 
@@ -605,10 +605,7 @@ border-bottom: 1px solid #D3D3D3;
 
 .innercontainer{
 		width:100%;
-		background-image: url('../images/steve11.jpg');
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
+		background-color:#D4D4AD;
 		min-height:100%;
 		overflow:auto;
 		

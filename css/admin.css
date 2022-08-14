@@ -42,9 +42,10 @@
 }
 .navlayer4{
 	overflow: hidden;
-	background-color: #a8a6a4;
+	background-color: #E6E6FA;
 	width:100%;	
-	/* border-bottom:1px solid lightgreen; */
+	border-top:1px dotted gray; 
+	border-bottom:1px dotted gray; 
 }
 .navlayer5{
 	overflow: hidden;
@@ -57,8 +58,9 @@
   padding: 10px 12px;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;	
+  font-size: 12px;
   font-family: Consolas,"courier new";
+  margin-right:5%;
   
 }
 .navlayer4 .right a{
@@ -449,60 +451,7 @@
 }
 
 
-/*top nav Styling*/
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
 
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-  font-size: 15px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 10px 12px;
-  background-color: #6495ED;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #6495ED;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Style the links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color:white;
-  padding: 10px 14px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 .div_pagination{
 	width:100%;
 	margin-top:5px;
@@ -875,3 +824,58 @@
 			margin-top:0%;
 		}
 	  }
+
+
+
+.dropbtn {
+  background-color: #E6E6FA;
+  color:black;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border:1px solid black;
+  border-radius:5px;
+  margin:2px;
+  font-family: Consolas,"courier new";
+  
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #E6E6FA;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #87CDEE;
+  max-width: 160px;
+  overflow: auto;
+  z-index: 1;
+  margin-left: -8%;
+  border-radius:5px;
+ 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  float:right;
+  
+}
+
+.dropdown a:hover {
+	background-color: #E6E6FA;
+}
+
+.show {
+	display: block;
+}

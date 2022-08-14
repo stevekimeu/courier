@@ -50,12 +50,20 @@ if($sql->num_rows > 0){
 	</div>
 	<div class="navlayer4">
 	<div class = "left">
-	<i>Logged in as:&nbsp;<?php echo $loggedin;} }?></i>
+	
 	</div>
 	<div class="right">		
-		<a href="user_message.php">Notification</a>
-		<a href="logout.php">Logout</a>
+		<a href="user_message.php">Notification</a>		
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Image</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#"><i><?php echo $loggedin;} }?></i> </a>
+				<a href="logout.php">Logout</a>
+			</div>
+</div>
+
 	  </div>
+
 	</div>
 	<div class="navlayer3" id="top">
 <table width = "100%">
@@ -78,12 +86,23 @@ if($sql->num_rows > 0){
 	</div>
 </div>
 <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
 function myFunction() {
-  var x = document.getElementById("top");
-  if (x.className === "navlayer3") {
-    x.className += " responsive";
-  } else {
-    x.className = "navlayer3";
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
 }
 </script>

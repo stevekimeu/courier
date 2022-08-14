@@ -49,6 +49,7 @@ require_once('../admin/library.php');
 		<a href="shop_animals.php">Buy Livestock</a>
 	  	<a href="sell_livestock.php">Sell your Livestock</a>
 	   	<a href="auctionresults.php">Auction Results</a>
+		   <a href="#">Livestock Inputs</a>
 	  </div>
 	</div>
 	
