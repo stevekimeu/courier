@@ -75,11 +75,21 @@
 	font-size: 14px;
 	color:green;
 	font-family: Consolas,"courier new";
+	margin-left:3%;
+  }
+  .navlayer4 .left a{
+	margin:4px;
+	border:1px solid #E6E6FA;
+	border-radius: 5px;
+	background-color: #D4D4AD;
+	color:brown;
   }
 
 .navlayer4 a:hover{
-	 background-color: #E6E6FA;
+	 background-color: #D4D4AD;
      color: black;	
+	 font-size: 13px;
+	 color:brown;
 }
 .navlayer4 a:active {
 	text-decoration: none;
