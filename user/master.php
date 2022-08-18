@@ -50,18 +50,17 @@ if($sql->num_rows > 0){
 	</div>
 	<div class="navlayer4">
 	<div class = "left">
-	
+	<a href="user_message.php">Notification</a>
 	</div>
 	<div class="right">		
-		<a href="user_message.php">Notification</a>		
+				
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">Image</button>
+			<button onclick="myFunction()" class="dropbtn"><i class="fa-regular fa-user"></i></button>
 			<div id="myDropdown" class="dropdown-content">
 				<a href="#"><i><?php echo $loggedin;} }?></i> </a>
 				<a href="logout.php">Logout</a>
 			</div>
 </div>
-
 	  </div>
 
 	</div>
