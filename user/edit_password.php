@@ -2,7 +2,6 @@
 include("master.php");
 require_once('../admin/database.php');
 $sql = mysqli_query($dbConn,"select password FROM tbl_offices WHERE email = '$username'"); // select query
-echo $username;
 
 $data = mysqli_fetch_array($sql); // fetch data
 
@@ -18,13 +17,14 @@ $data = mysqli_fetch_array($sql); // fetch data
 				{
 					$currentPassword = $_POST['currentPassword'];
                     $newPassword = $_POST['newPassword'];
+                    $confirmPassword = $_POST['confirmPassword']; 
 
-					if($currentPassword == $data['password']) {
-                        $update= mysqli_query($dbConn, "update tbl_offices set password ='$newPassword' WHERE email='$username'");
+					if($currentPassword == $data['password'] && $newPassword == $confirmPassword) {
+                        mysqli_query($dbConn, "update tbl_offices set password ='$newPassword' WHERE email='$username'");
                         header("location: user_login.php");
                     }
                     else {
-                        mysqli_error($dbConn);
+                        echo "Update was not sucessful";
                     }
 				   
                 }
@@ -42,12 +42,17 @@ $data = mysqli_fetch_array($sql); // fetch data
 		<td>		
 	<div class="form-group">
 			<label>Enter the Current Password </label>			
-			<input type="password" name="currentPassword"><span id="currentPassword"class = "form-control1" />		
+			<input type="password" name="currentPassword" id = "currentPassword" class = "form-control1" />		
 	</div>	
 </td><td>
 	 <div class="form-group">
 			<label>Enter New Password </label>		  
-			<input type="password" name="newPassword"><span id="newPassword" class = "form-control1" />
+			<input type="password" name="newPassword" id = "newPassword" class = "form-control1" />
+	</div>
+    </td><td>
+	 <div class="form-group">
+			<label>Confirm Password </label>		  
+			<input type="password" name="confirmPassword" id = "confirmPassword" class = "form-control1" />
 	</div>
 </td></tr>
 <tr>
