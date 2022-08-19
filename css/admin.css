@@ -871,25 +871,27 @@
   max-width: 160px;
   overflow: auto;
   z-index: 1;
-  margin-left: -6.0%;
+  margin-left: -4.0%;
   border-radius:5px;
   
  
 }
-
 .dropdown-content a {
   color: black;
   padding: 10px 14px;
   text-decoration: none;
   display: block;
-  text-align: center;
+  text-align: right;
   float:right;
-  border-bottom: 2px dotted black;
+  border-bottom: 2px solid #E6E6FA;
   background-color:inherit;  
+  font-family: Consolas,"courier new";
+  font-size: 14px;
 }
 
 .dropdown a:hover {
-	background-color: #E6E6FA;
+	background-color: #D4D4AD;
+	font-size: 14px;
 }
 
 .show {

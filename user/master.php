@@ -55,10 +55,11 @@ if($sql->num_rows > 0){
 	<div class="right">		
 				
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn"><i class="fa-regular fa-user"></i></button>
+			<button onclick="myFunction()" class="dropbtn">My Account</i></button>
 			<div id="myDropdown" class="dropdown-content">
-				<a href="#"><i><?php echo $loggedin;} }?></i> </a>
-				<a href="logout.php">Logout</a>
+				<a href="#"><i style="text-transform:uppercase;"><?php echo $loggedin;} }?></i> </a>
+				<a href="edit_password.php">Change Password</a>
+				<a href="logout.php">Sign Out</a>
 			</div>
 </div>
 	  </div>
@@ -74,7 +75,7 @@ if($sql->num_rows > 0){
 		  <a href="bids.php">My Livestock Buyers</a>
 		  <a href="mybids.php">My Bids on Others</a>			  
 		  <a href="auctionresults.php">Results</a>
-		  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>			  
+		  <a href="javascript:void(0);" class="icon" onclick="Responsiveness()"><i class="fa fa-bars"></i>			  
 				  
 		</td>
 	</tr>
@@ -102,6 +103,14 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
       }
     }
+  }
+}
+function Responsiveness() {
+  var x = document.getElementById("top");
+  if (x.className === "navlayer3") {
+    x.className += " responsive";
+  } else {
+    x.className = "navlayer3";
   }
 }
 </script>
