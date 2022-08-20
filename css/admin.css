@@ -849,14 +849,14 @@
   border-radius:5px;
   margin:2px;
   font-family: Consolas,"courier new";
-  
+  text-transform:uppercase;
 }
 .dropbtn:active{
 	background-color: #D4D4AD;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #E6E6FA;
+  background-color: #D4D4AD;
 }
 
 .dropdown {

@@ -5,7 +5,6 @@ $sql = mysqli_query($dbConn,"select password FROM tbl_offices WHERE email = '$us
 
 $data = mysqli_fetch_array($sql); // fetch data
 
-
 ?>
 			
 	<div class = "innercontainer">
@@ -13,30 +12,40 @@ $data = mysqli_fetch_array($sql); // fetch data
 		<div class = "wrapper_edit">
 
 			<?php
-				if(isset($_POST['submit']))
-				{
-					$currentPassword = $_POST['currentPassword'];
-                    $newPassword = $_POST['newPassword'];
+				if ( !empty ( $_POST ['submit'] ) ) {
                     $confirmPassword = $_POST['confirmPassword']; 
-
-					if($currentPassword == $data['password'] && $newPassword == $confirmPassword) {
-                        mysqli_query($dbConn, "update tbl_offices set password ='$newPassword' WHERE email='$username'");
-                        header("location: user_login.php");
-                    }
+                    $currentPassword = $_POST['currentPassword'];
+                    $newPassword = $_POST['newPassword'];
+					$oldPassword = $data['password'];
+					$hashed_password = password_hash($currentPassword, PASSWORD_DEFAULT);
+					
+					if($hashed_password == $oldPassword){
+						
+						if ($newPassword == $confirmPassword) {
+						$hash_password = password_hash($newPassword, PASSWORD_DEFAULT);
+                        $update = mysqli_query($dbConn, "UPDATE tbl_offices SET password ='$hash_password' WHERE email='$username'");
+                            if($update){
+                                    header("location: user_login.php");
+                                }
+                            else{
+                                    header("location: edit_password.php");
+                                }
+                            }
                     else {
-                        echo "Update was not sucessful";
+                        echo "New Password field does not match with confirm password field";
                     }
 				   
                 }
 				else 
 					{
+						echo "The Old password is wrong";
 						mysqli_close($dbConn);
 					}
-				
+				}	
 		?>
 		 <form name="form" method="POST" action="">
 			
-						<p>CHANGE PASSWORD</p>
+			<p>CHANGE PASSWORD</p>
 <table width = "100%">	
 	<tr>
 		<td>		
@@ -57,9 +66,10 @@ $data = mysqli_fetch_array($sql); // fetch data
 </td></tr>
 <tr>
 	<td>
-		  <input name="submit" type="submit" value="Submit Changes" />
-		</td></tr>
-		  
+		<input name="submit" type="submit" value="Submit Changes" />
+	</td>
+</tr>
+</table>
 	 </form>   
  
 
