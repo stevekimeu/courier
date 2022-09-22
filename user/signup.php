@@ -116,31 +116,25 @@ foreach($error as $error){
         <p>Please fill this form to create an account.</p>
 <form action="" method="POST">
 <div class = "wrapper_left">
-		  <div class="form-group">  	
-				<label class="label_txt">Enter your Full Name</label>
-				<input type="text" class="form-control" name="fname" value="<?php if(isset($error)){ echo $_POST['fname'];}?>" required="">
+		  <div class="form-group">  		
+				<input type="text" class="form-control" name="fname" value="<?php if(isset($error)){ echo $_POST['fname'];}?>" required="" placeholder="Enter your Full Name">
 		  </div>
-		  <div class="form-group">
-				<label class="label_txt">Region/Country/County </label>
-				<input type="text" class="form-control" name="region" value="<?php if(isset($error)){ echo $_POST['region'];}?>" required="">
+		  <div class="form-group">				
+				<input type="text" class="form-control" name="region" value="<?php if(isset($error)){ echo $_POST['region'];}?>" required="" placeholder="Home County ">
 		  </div> 
-			<div class="form-group">
-				<label class="label_txt">Phone Number </label>
-				<input type="text" class="form-control" name="phonenumber" value="<?php if(isset($error)){ echo $_POST['phonenumber'];}?>" required="">
+			<div class="form-group">				
+				<input type="text" class="form-control" name="phonenumber" value="<?php if(isset($error)){ echo $_POST['phonenumber'];}?>" required="" placeholder="Phone number">
 			</div>
 </div>
 <div class = "wrapper_right">
-		<div class="form-group">
-			<label class="label_txt">Email Address </label>
-			<input type="email" class="form-control" name="email" value="<?php if(isset($error)){ echo $_POST['email'];}?>" required="">
+		<div class="form-group">			
+			<input type="email" class="form-control" name="email" value="<?php if(isset($error)){ echo $_POST['email'];}?>" required="" placeholder="Email Adrress">
 		  </div>
-		  <div class="form-group">
-			<label class="label_txt">Password </label>
-			<input type="password" name="password" class="form-control" required="">
+		  <div class="form-group">			
+			<input type="password" name="password" class="form-control" required="" placeholder="Enter Password">
 		  </div>
-	   <div class="form-group">
-			<label class="label_txt">Confirm Password </label>
-			<input type="password" name="passwordConfirm" class="form-control" required="">
+	   <div class="form-group">			
+			<input type="password" name="passwordConfirm" class="form-control" required="" placeholder="Confirm password">
 	  </div>
 </div>
 		<div class="user_login">

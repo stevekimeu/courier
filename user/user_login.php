@@ -115,13 +115,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         ?>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username"  class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+
+                <input type="text" name="username"  class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>"  placeholder="Enter emailaddress">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    <br>
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                
+                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" placeholder="Enter password">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div><br>
             <div class="user_login" align = "center">

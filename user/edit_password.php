@@ -16,6 +16,7 @@ $data = mysqli_fetch_array($sql); // fetch data
                     $confirmPassword = $_POST['confirmPassword']; 
                     $currentPassword = $_POST['currentPassword'];
                     $newPassword = $_POST['newPassword'];
+					
 					$oldPassword = $data['password'];
 					$hashed_password = password_hash($currentPassword, PASSWORD_DEFAULT);
 					
