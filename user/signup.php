@@ -113,35 +113,34 @@ foreach($error as $error){
 <div class = "user_loginbg">
     <div class="wrapper">
 	<h2>Registration Form</h2>
-        <p>Please fill this form to create an account.</p>
+        <h6>Please fill this form to create an account.</h6>
 <form action="" method="POST">
 <div class = "wrapper_left">
 		  <div class="form-group">  		
-				<input type="text" class="form-control" name="fname" value="<?php if(isset($error)){ echo $_POST['fname'];}?>" required="" placeholder="Enter your Full Name">
+				<input type="text" class="form-control" name="fname" value="<?php if(isset($error)){ echo $_POST['fname'];}?>" required="" placeholder="Enter your Full Name" minlength = "8"maxlength = "30">
 		  </div>
 		  <div class="form-group">				
-				<input type="text" class="form-control" name="region" value="<?php if(isset($error)){ echo $_POST['region'];}?>" required="" placeholder="Home County ">
+				<input type="text" class="form-control" name="region" value="<?php if(isset($error)){ echo $_POST['region'];}?>" required="" placeholder="Enter home County " minlength = "3"maxlength = "20">
 		  </div> 
 			<div class="form-group">				
-				<input type="text" class="form-control" name="phonenumber" value="<?php if(isset($error)){ echo $_POST['phonenumber'];}?>" required="" placeholder="Phone number">
+				<input type="number" class="form-control" name="phonenumber" value="<?php if(isset($error)){ echo $_POST['phonenumber'];}?>" required="" placeholder="Enter phone number" minlength = "9"maxlength = "14">
 			</div>
 </div>
 <div class = "wrapper_right">
 		<div class="form-group">			
-			<input type="email" class="form-control" name="email" value="<?php if(isset($error)){ echo $_POST['email'];}?>" required="" placeholder="Email Adrress">
+			<input type="email" class="form-control" name="email" value="<?php if(isset($error)){ echo $_POST['email'];}?>" required="" placeholder="Enter email Adrress" minlength = "10"maxlength = "30">
 		  </div>
 		  <div class="form-group">			
-			<input type="password" name="password" class="form-control" required="" placeholder="Enter Password">
+			<input type="password" name="password" class="form-control" required="" placeholder="Enter your password" minlength = "8" maxlength = "30">
 		  </div>
 	   <div class="form-group">			
-			<input type="password" name="passwordConfirm" class="form-control" required="" placeholder="Confirm password">
+			<input type="password" name="passwordConfirm" class="form-control" required="" placeholder="Confirm password" minlength = "8" maxlength = "30">
 	  </div>
 </div>
 		<div class="user_login">
                 <input type="submit" name = "signup" value="Submit">
-                <input type="reset"  value="Reset">
         </div>
-   <p>Already Have an account?  <a href="user_login.php">Login Here</a> </p>
+   <p>Already Have an account?  <a href="user_login.php">Login</a> </p>
    <p><a href="Home.php">Go to main Page</a>.</p>
 </form>
 <?php } ?> 

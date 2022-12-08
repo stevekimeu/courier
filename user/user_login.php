@@ -105,8 +105,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 <div class = "user_loginbg">
     <div class="wrapper_login">	
-        <h2>Login Form</h2>
-        <p>Please fill in your credentials to login.</p>
+        <h2>Online Livestock Markets</h2>
+        <h6>Convenient livestock trading </h6>
 
         <?php 
         if(!empty($login_err)){
@@ -116,7 +116,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
 
-                <input type="text" name="username"  class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>"  placeholder="Enter emailaddress">
+                <input type="text" name="username"  class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>"  placeholder="Enter email address">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    <br>
             <div class="form-group">
@@ -127,8 +127,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="user_login" align = "center">
                 <input type="submit" value="Login">
             </div>
-			<p>Forgot Password?&nbsp;&nbsp;<a href="forgot_password.php">Reset here</a></p>
-            <p>OR Don't have an account? </p> <br><br>
+			<p><a href="forgot_password.php">Forgot your password?&nbsp;</a></p> 
+            <p>Don't have an account? </p> 
             <div class="user_login" align = "center">
             <a href="signup.php">Register Here </a>
             </div>
